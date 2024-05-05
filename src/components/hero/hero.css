@@ -1,0 +1,96 @@
+.hero-section{
+    padding: var(--global-wrapper-padding);
+    background-color: var(--secondary-dark);
+    min-height: 100dvh;
+    display: grid;
+    place-items: center;
+}
+.hero-container{
+    max-width: var(--global-wrapper-width);
+    margin: 0 auto;
+    width: 100%;
+    /* padding: 100px 0; */
+}
+
+.content-box{
+    width: 100%;
+}
+
+.content-box .left-box{
+    width: 50%;
+}
+.content-box .right-box{
+    width: 50%;
+}
+.accent-heading{
+    color: var(--accent-color);
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+.left-box .role{
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 1.4;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.right-box{
+    position: relative;
+}
+
+.image-container.extra-card {
+    position: absolute;
+    background-color: var(--accent-color);
+    transform: rotate(-6deg);
+    top: 25px;
+    left: 35px;
+}
+.image-container {
+    position: absolute;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    height: 500px !important;
+    width: 60% !important;
+    margin: 0 auto;
+    transform: rotate(8deg);
+}
+
+.work-list .work-list-item {
+    font-size: 17px;
+    padding: 8px 0px;
+    color: var(--primary-white);
+    width: max-content;
+    cursor: pointer;
+}
+.work-list .work-list-item:hover {
+    color: var(--accent-color);
+}
+.work-list .work-list-item:hover .right-arrow{
+    transform: rotate(-35deg);
+}
+.work-list .work-list-item .right-arrow {
+    width: 20px;
+    margin-left: 15px;
+    -webkit-transition: transform 0.2s ease, color 0.01s ease !important;
+    -moz-transition: transform 0.2s ease, color 0.01s ease !important;
+    -ms-transition: transform 0.2s ease, color 0.01s ease !important;
+    -o-transition: transform 0.2s ease, color 0.01s ease !important;
+    transition: transform 0.2s ease, color 0.01s ease !important;
+}
+.info-box {
+    margin-top: 40px;
+}
+.info-box .exp-wrapper h3{
+    font-size: 45px;
+    font-weight: 600;
+    color: var(--primary-white);
+}
+.info-box .exp-wrapper .exp-text {
+    font-size: 14px;
+    padding-left: 15px;
+    line-height: 1.4;
+    position: relative;
+    top: -3px;
+} 
