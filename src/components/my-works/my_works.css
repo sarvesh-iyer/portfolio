@@ -1,0 +1,8 @@
+.my-works-section {
+    padding: var(--global-wrapper-padding);
+}
+.my-works-container {
+    max-width: var(--global-wrapper-width);
+    margin: 0 auto;
+    padding: 100px 0;
+}

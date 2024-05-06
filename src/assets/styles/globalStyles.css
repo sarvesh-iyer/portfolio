@@ -120,6 +120,14 @@ h1, h2, h3, h4, h5, h6{
 	justify-content: center;
 }
 
+.section-heading{
+	font-weight: 800;
+    text-transform: uppercase;
+	color: var(--primary-white);
+	line-height: 1.2;
+	font-size: 30px;
+}
+
 .transition {
 	-webkit-transition: all .3s ease !important;
     -moz-transition: all .3s ease !important;

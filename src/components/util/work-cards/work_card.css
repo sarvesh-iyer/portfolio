@@ -1,0 +1,43 @@
+.work-card-wrapper{
+    cursor: pointer;
+    position: relative;
+    aspect-ratio: 0.89/1;
+    max-width: 364px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+.work-card-wrapper:hover .work-info-overlay{
+    opacity: 1;
+    visibility: visible;
+}
+.work-info-overlay{
+    position: absolute;
+    height: 78%;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    padding: 30px;
+    background-color: var(--primary-dark);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.open-arrow{
+    color: var(--primary-white);
+    font-size: 40px !important;
+    align-self: flex-end;
+    position: relative;
+    top: -5px;
+    right: -5px
+}
+.work-name{
+    color: var(--primary-white);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
