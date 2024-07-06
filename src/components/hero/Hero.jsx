@@ -1,6 +1,6 @@
 import { Helper } from '../../helpers/helper'
 import './hero.css'
-import MyPic from '../../assets/images/my-pic.jpg'
+import MyPic from '../../assets/images/hero/mypic2.png'
 
 import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
 import { heroWorkList } from '../../data/heroWorkList';

@@ -4,7 +4,7 @@
     aspect-ratio: 0.89/1;
     max-width: 364px;
     border: 1px solid transparent;
-    border-radius: 10px;
+    border-radius: var(--global-border-radius);
 }
 .work-card-wrapper:hover .work-info-overlay{
     opacity: 1;
@@ -21,7 +21,7 @@
     visibility: hidden;
     padding: 30px;
     background-color: var(--primary-dark);
-    border-radius: 10px;
+    border-radius: var(--global-border-radius);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
