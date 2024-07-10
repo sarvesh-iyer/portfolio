@@ -1,0 +1,18 @@
+.experience-section {
+    background-color: var(--secondary-dark);
+    padding: var(--global-wrapper-padding);
+}
+.experience-container {
+    max-width: var(--global-wrapper-width);
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.experience-container .vertical-timeline::before {
+    top: 45px;
+    height: 92%;
+}
+
+.experience-container .vertical-timeline-element-content p {
+    font-weight: 400;
+}

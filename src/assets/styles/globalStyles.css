@@ -88,6 +88,7 @@ h1, h2, h3, h4, h5, h6{
 	--secondary-white: #a7afbd;
 	--primary-dark: #494b50;
 	--secondary-dark: #303134;
+	/* --secondary-dark: #3a3b3b; */
 	--global-border-radius: 15px;
 	--global-wrapper-width: 1250px;
 	--global-wrapper-padding: 0 35px 0 35px;

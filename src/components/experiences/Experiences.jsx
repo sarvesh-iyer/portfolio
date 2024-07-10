@@ -1,4 +1,5 @@
 import React from 'react'
+import './experience.css'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import WorkIcon from '@mui/icons-material/Work';
@@ -8,98 +9,96 @@ import StarIcon from '@mui/icons-material/Star';
 export const Experiences = () => {
     return (
         <section className="experience-section">
-            <VerticalTimeline>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                    date="2011 - present"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    icon={<WorkIcon />}
-                >
-                    <h3 className="vertical-timeline-element-title">React Developer</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Chennai, Tamil Nadu, India</h4>
-                    <p>
-                    Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    date="2010 - 2011"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    icon={<WorkIcon />}
-                >
-                    <h3 className="vertical-timeline-element-title">Art Director</h3>
-                    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-                    <p>
-                    Creative Direction, User Experience, Visual Design, SEO, Online Marketing
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    date="2008 - 2010"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    icon={<WorkIcon />}
-                >
-                    <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
-                    <p>
-                    User Experience, Visual Design
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    date="2006 - 2008"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    icon={<WorkIcon />}
-                >
-                    <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-                    <p>
-                    User Experience, Visual Design
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--education"
-                    date="April 2013"
-                    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    icon={<SchoolIcon />}
-                >
-                    <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-                    <p>
-                    Strategy, Social Media
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--education"
-                    date="November 2012"
-                    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    icon={<SchoolIcon />}
-                >
-                    <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-                    <p>
-                    Creative Direction, User Experience, Visual Design
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--education"
-                    date="2002 - 2006"
-                    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    icon={<SchoolIcon />}
-                >
-                    <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-                    <p>
-                    Creative Direction, Visual Design
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-                    icon={<StarIcon />}
-                />
-            </VerticalTimeline>
+            <div className="experience-container">
+                <div className="accent-heading">
+                    Timeline
+                </div>
+                <h3 className="section-heading">
+                    My Experience
+                </h3>
+                <VerticalTimeline lineColor="#494b50" >
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--work"
+                        contentStyle={{ background: '#494b50', color: '#fff' }}
+                        contentArrowStyle={{ borderRight: '10px solid  #494b50' }}
+                        date="2011 - present"
+                        iconStyle={{ background: '#494b50', color: '#fff' }}
+                        icon={<WorkIcon />}
+                    >
+                        <h3 className="vertical-timeline-element-title font-semibold">React Js Developer</h3>
+                        <h4 className="vertical-timeline-element-subtitle font-medium">Ailaysa Technologies Pvt. Ltd, Chennai</h4>
+                        <p>
+                            Product Development, API integrations, Component library development, Front-end infrastructure management, 
+                            Front-end production deployment
+                        </p>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--work"
+                        date="May 2021 - October 2021"
+                        contentStyle={{ background: '#494b50', color: '#fff' }}
+                        contentArrowStyle={{ borderRight: '10px solid  #494b50' }}
+                        iconStyle={{ background: '#494b50', color: '#fff' }}
+                        icon={<WorkIcon />}
+                    >
+                        <h3 className="vertical-timeline-element-title font-semibold">Shopify Theme developer</h3>
+                        <h4 className="vertical-timeline-element-subtitle font-medium">Quantulum Ventures, Bengaluru</h4>
+                        <p>
+                            Shopify liquid template language, E-commerce theme developer, User Experience, 
+                            Responsive website
+                        </p>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--education"
+                        date="June 2019 - June 2022"
+                        contentStyle={{ background: '#494b50', color: '#fff' }}
+                        contentArrowStyle={{ borderRight: '10px solid  #494b50' }}
+                        iconStyle={{ background: '#494b50', color: '#fff' }}
+                        icon={<SchoolIcon />}
+                    >
+                        <h3 className="vertical-timeline-element-title font-semibold">Bachelor of Computer Science and Engineering</h3>
+                        <h4 className="vertical-timeline-element-subtitle font-medium">Karpagam College of Engineering, Coimbatore</h4>
+                        <p>
+                            CGPA: 9.0 <br />
+                            Inter-college Technical symposium: 1st
+                        </p>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--education"
+                        date="June 2016 - May 2019"
+                        contentStyle={{ background: '#494b50', color: '#fff' }}
+                        contentArrowStyle={{ borderRight: '10px solid  #494b50' }}
+                        iconStyle={{ background: '#494b50', color: '#fff' }}
+                        icon={<SchoolIcon />}
+                    >
+                        <h3 className="vertical-timeline-element-title font-semibold">Diploma in Computer Engineering</h3>
+                        <h4 className="vertical-timeline-element-subtitle font-medium">Sairam Polytechnic College, Chennai</h4>
+                        <p>
+                            Precentage: 97% <br />
+                            Inter-college Project exhibition: 1st award <br />
+                            Inter-college Technical symposium: 1st and 2nd award
+                        </p>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--education"
+                        date="April 2014 - March 2015"
+                        contentStyle={{ background: '#494b50', color: '#fff' }}
+                        contentArrowStyle={{ borderRight: '10px solid  #494b50' }}
+                        iconStyle={{ background: '#494b50', color: '#fff' }}
+                        icon={<SchoolIcon />}
+                    >
+                        <h3 className="vertical-timeline-element-title font-semibold">10th CBSE</h3>
+                        <h4 className="vertical-timeline-element-subtitle font-medium">Kendriya Vidyalaya, Jagdalpur</h4>
+                        <p>
+                            CGPA: 8.5 <br />
+                            10.0 CGPA in Information Technology
+                        </p>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                        iconStyle={{ background: '#ff4522', color: '#fff' }}
+                        icon={<StarIcon />}
+                    />
+                </VerticalTimeline>
+            </div>
         </section>
     )
 }
