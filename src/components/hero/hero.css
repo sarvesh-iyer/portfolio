@@ -1,15 +1,12 @@
 .hero-section{
-    padding: var(--global-wrapper-padding);
     background-color: var(--secondary-dark);
     min-height: 100dvh;
     display: grid;
     place-items: center;
 }
 .hero-container{
-    max-width: var(--global-wrapper-width);
     margin: 0 auto;
     width: 100%;
-    /* padding: 100px 0; */
 }
 
 .content-box{

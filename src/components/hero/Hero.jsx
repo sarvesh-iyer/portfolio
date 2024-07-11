@@ -19,8 +19,8 @@ export const Hero = () => {
     } 
 
     return (
-        <section className="hero-section">
-            <div className="hero-container">
+        <section className="main-component-section hero-section">
+            <div className="main-section-container hero-container">
                 <div className="content-box d-flex items-center">
                     <div className="left-box">
                         <div className="accent-heading">

@@ -8,8 +8,8 @@ import StarIcon from '@mui/icons-material/Star';
 
 export const Experiences = () => {
     return (
-        <section className="experience-section">
-            <div className="experience-container">
+        <section className="main-component-section experience-section">
+            <div className="main-section-container experience-container">
                 <div className="accent-heading">
                     Timeline
                 </div>
@@ -21,7 +21,7 @@ export const Experiences = () => {
                         className="vertical-timeline-element--work"
                         contentStyle={{ background: '#494b50', color: '#fff' }}
                         contentArrowStyle={{ borderRight: '10px solid  #494b50' }}
-                        date="2011 - present"
+                        date="March 2022 - Present"
                         iconStyle={{ background: '#494b50', color: '#fff' }}
                         icon={<WorkIcon />}
                     >
@@ -40,7 +40,7 @@ export const Experiences = () => {
                         iconStyle={{ background: '#494b50', color: '#fff' }}
                         icon={<WorkIcon />}
                     >
-                        <h3 className="vertical-timeline-element-title font-semibold">Shopify Theme developer</h3>
+                        <h3 className="vertical-timeline-element-title font-semibold">Shopify Theme developer (Internship)</h3>
                         <h4 className="vertical-timeline-element-subtitle font-medium">Quantulum Ventures, Bengaluru</h4>
                         <p>
                             Shopify liquid template language, E-commerce theme developer, User Experience, 

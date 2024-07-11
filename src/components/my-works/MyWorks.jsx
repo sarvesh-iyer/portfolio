@@ -4,8 +4,8 @@ import './my_works.css'
 
 export const MyWorks = () => {
     return (
-        <section className="my-works-section">
-            <div className="my-works-container">
+        <section className="main-component-section my-works-section">
+            <div className="main-section-container my-works-container">
                 <div className="accent-heading">
                     Portfolio
                 </div>
