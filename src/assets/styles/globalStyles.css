@@ -125,6 +125,15 @@ h1, h2, h3, h4, h5, h6{
 	justify-content: center;
 }
 
+.main-component-section {
+	padding: var(--global-wrapper-padding);
+}
+
+.main-section-container {
+	max-width: var(--global-wrapper-width);
+    margin: 0 auto;
+}
+
 .section-heading{
 	font-weight: 800;
     text-transform: uppercase;
