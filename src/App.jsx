@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 import { RootLayout } from './layouts/RootLayout'
 import { Home } from './pages/Home'
