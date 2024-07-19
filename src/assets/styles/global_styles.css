@@ -126,6 +126,21 @@ h3 {
 	max-width: var(--global-container-width);
 	margin: 0 auto;
 }
+.section-container .left-container {
+	width: 45%;
+}
+.section-container .right-container {
+    width: 55%;
+}
+
+.divider {
+	margin: 30px 0;
+	border-top: 1px solid #484848;
+}
+
+.transition { 
+    transition: all .15s linear;
+}
 
 @media screen and (max-width: 1100px) {
 	:root {

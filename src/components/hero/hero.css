@@ -4,19 +4,14 @@
     gap: 16px;
 }
 
-.hero-container .left-box {
-    width: 45%;
-}
-.hero-container .right-image-box {
-    width: 55%;
+.hero-container .right-container {
     padding: 25px;
-    /* outline: 1px solid red; */
 }
 
 .hero-container .image-container {
     border-radius: var(--card-border-radius);
     overflow: hidden;
-    max-width: 550px;
+    max-width: 580px;
     margin: 0 auto;
 }
 
