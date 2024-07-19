@@ -3,13 +3,13 @@ import { ActionButton } from '../utils/button/ActionButton'
 import './hero.css'
 import MyPic from '../../assets/images/hero/mypic.png'
 import { socialLinksList } from '../../data/socialLinkData'
- 
+import NorthEastIcon from '@mui/icons-material/NorthEast';
 
 export const Hero = () => {
     return (
         <section className="section-wrapper">
             <div className="section-container hero-container">
-                <div className="left-box">
+                <div className="left-container">
                     <h1 className="name">
                         Hi, I am <br />
                         Sarvesh Iyer.
@@ -18,7 +18,10 @@ export const Hero = () => {
                         As a front-end developer, I am deeply committed to creating accessible and user-friendly websites.
                     </p>
                     <div className="contact-button-group space-x-4">
-                        <ActionButton>
+                        <ActionButton 
+                            showIcon={true}
+                            icon={<NorthEastIcon />}
+                        >
                             Contact me
                         </ActionButton>
 
@@ -27,7 +30,7 @@ export const Hero = () => {
                                 key={item.id} 
                                 href={item.link}
                                 target='_blank'
-                                className="contact-icons"
+                                className="contact-icons transition"
                             >
                                 <img src={item.icon} alt={item.name} />
                             </a>
@@ -36,7 +39,7 @@ export const Hero = () => {
 
                     </div>
                 </div>
-                <div className="right-image-box">
+                <div className="right-container">
                     <div className="image-container">
                         <img 
                             src={MyPic} 

@@ -27,9 +27,8 @@
     place-content: center;
     border-radius: 50%;
     scale: 0.26;
-    transition: all .15s linear;
 }
-.action-btn .arrow {
+.action-btn svg {
     font-size: 24px;
     color: var(--primary-dark);
 }
@@ -37,6 +36,6 @@
 .action-btn:hover .animated-arrow{
     scale: 1;
 }
-.action-btn:hover .arrow{ 
+.action-btn:hover svg{ 
     color: var(--primary-white);
 }

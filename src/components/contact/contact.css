@@ -1,0 +1,42 @@
+.contact-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    justify-content: space-between;
+}
+.contact-container h2 {
+    margin-bottom: 16px;
+}
+.animated-underline {
+    cursor: pointer;
+    position: relative;
+}
+.animated-underline:hover::before {
+    animation: animate-underline .3s linear;
+}
+
+.animated-underline::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -3px;
+    background-color: var(--accent-color);
+}
+
+
+@keyframes animate-underline {
+    from {bottom: 8px; opacity: 0.5;}
+    to {bottom: -3px; opacity: 1;}
+}
+
+.contact-container .social-link-wrapper {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+.contact-container .social-link-wrapper .social-icons:hover {
+    background-color: var(--secondary-hover-dark);
+    border-radius: 50%;
+    padding: 8px;
+}
