@@ -23,7 +23,7 @@ export const ActionButton = (props) => {
             {children}
             {showIcon && (
                 <div className="animated-arrow-container">
-                    <span className="animated-arrow transition">
+                    <span className="animated-arrow transition-effect">
                         {icon}
                     </span>
                 </div>

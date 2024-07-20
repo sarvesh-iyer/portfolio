@@ -37,7 +37,7 @@ export const Contact = () => {
                                     key={item.id} 
                                     href={item.link}
                                     target='_blank'
-                                    className="social-icons transition p-2"
+                                    className="social-icons transition-effect p-2"
                                 >
                                     <img src={item.icon} alt={item.name} />
                                 </a>

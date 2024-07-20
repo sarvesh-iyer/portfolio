@@ -30,7 +30,7 @@ export const Hero = () => {
                                 key={item.id} 
                                 href={item.link}
                                 target='_blank'
-                                className="contact-icons transition"
+                                className="contact-icons transition-effect"
                             >
                                 <img src={item.icon} alt={item.name} />
                             </a>
