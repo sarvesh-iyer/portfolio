@@ -3,6 +3,7 @@ import { socialLinksList } from '../../data/socialLinkData'
 import './contact.css'
 import { InputField } from '../utils/input-field/InputField'
 import { ActionButton } from '../utils/button/ActionButton'
+import { AnimatedLink } from '../utils/animated-link/AnimatedLink'
 
 export const Contact = () => {
     return (
@@ -11,16 +12,24 @@ export const Contact = () => {
                 <div className="left-container">
                     <div>
                         <h2>Let's Connect</h2>
-                        <p className='mb-2'>Say hello at <a 
-                                href='mailto:sarvesh.iyer3@gmail.com' 
-                                className="animated-underline transition"
-                            >
+                        <p className='mb-2'>Say hello at <AnimatedLink 
+                            link="mailto:sarvesh.iyer3@gmail.com"
+                            customClass="normal-case font-normal"
+                            noAccentColor={true}
+                            inheritFontSize={true}
+                        >
                                 sarvesh.iyer3@gmail.com
-                            </a>
+                            </AnimatedLink>
                         </p>
-                        <p>For more info, here's my <span className="animated-underline transition">
-                            resume
-                        </span></p>
+                        <p>For more info, here's my <AnimatedLink 
+                            link=""
+                            customClass="normal-case font-normal"
+                            noAccentColor={true}
+                            inheritFontSize={true}
+                        >
+                                resume
+                            </AnimatedLink>
+                        </p>
 
                         <div className="social-link-wrapper space-x-6 ">
                             {socialLinksList.map(item => (

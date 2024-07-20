@@ -1,5 +1,10 @@
+.hero-container {
+    display: flex;
+    align-items: center;
+}
+
 .hero-container .right-container {
-    padding: 25px;
+    padding: 25px 85px;
 }
 
 .hero-container .image-container {
