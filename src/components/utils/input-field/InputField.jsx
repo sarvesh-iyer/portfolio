@@ -33,7 +33,7 @@ export const InputField = (props) => {
                     id={name}
                     type={type}
                     className={[
-                        "input-field",
+                        "input-field transition",
                         isError && "error-field"
                     ].join(' ')}
                     value={value}
