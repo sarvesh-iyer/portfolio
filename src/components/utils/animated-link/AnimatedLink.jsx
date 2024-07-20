@@ -9,7 +9,8 @@ export const AnimatedLink = (props) => {
         customClass, 
         samePage, 
         noAccentColor,
-        inheritFontSize
+        inheritFontSize,
+        icon
     } = props
 
     return (
@@ -17,13 +18,19 @@ export const AnimatedLink = (props) => {
             to={link}
             target={samePage ? '_self' : '_blank'}
             className={[
-                "animated-underline transition",
+                "animated-underline transition inline-flex items-center",
                 noAccentColor && "no-accent-color",
                 customClass
             ].join(' ')}
             style={inheritFontSize ? {fontSize: 'inherit'} : {}}
         >
             {children}
+            
+            {icon && (
+                <span className="ml-1">
+                    {icon}
+                </span>
+            )}
         </Link>
     )
 }
