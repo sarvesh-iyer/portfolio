@@ -1,0 +1,23 @@
+.experience-container {
+    padding: 80px 0;
+}
+.role-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.role-wrapper .period {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--secondary-white);
+}
+
+.company-name {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 160.0000023841858%;
+    color: var(--accent-color);
+    margin-top: 6px;
+    margin-bottom: 10px;
+}

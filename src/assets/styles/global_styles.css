@@ -24,7 +24,7 @@ time, mark, audio, video {
 	border: 0;
 	vertical-align: baseline;
     font-family: "Manrope", sans-serif;
-	scroll-behavior: smooth;
+	/* scroll-behavior: smooth; */
 }
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -106,6 +106,14 @@ h3 {
 	letter-spacing: 0%;
 }
 
+h4 {
+	font-size: 24px;
+	font-family: "Manrope", sans-serif;
+	font-weight: 500;
+	line-height: 129.99999523162842%;
+	letter-spacing: -1%;
+}
+
 :root {
 	--accent-color: #D3E97A;
 	--primary-white: #FFFFFF;
@@ -147,14 +155,14 @@ h3 {
 }
 
 .about-me-container {
-	padding: 100px 0;
+	padding: 70px 0 100px 0;
 }
 .featured-project-container {
 	padding: 55px 0 70px 0;
 }
 
 .capabilities-container {
-	padding: 80px 0;
+	padding: 80px 0 50px 0;
 }
 
 @media screen and (max-width: 1100px) {
