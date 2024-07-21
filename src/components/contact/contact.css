@@ -15,6 +15,7 @@
     display: flex;
     align-items: center;
 }
+
 .contact-container .social-link-wrapper .social-icons:hover {
     background-color: var(--secondary-hover-dark);
     border-radius: 50%;
