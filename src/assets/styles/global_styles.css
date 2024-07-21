@@ -129,7 +129,6 @@ h3 {
 	display: flex;
     justify-content: space-between;
     gap: 16px;
-	padding-bottom: 120px;
 }
 .section-container .left-container {
 	width: 45%;
@@ -153,12 +152,10 @@ h3 {
 .featured-project-container {
 	padding: 55px 0 70px 0;
 }
-/* .about-me-container .left-container {
-	width: 35%;
+
+.capabilities-container {
+	padding: 80px 0;
 }
-.about-me-container .right-container {
-	width: 65%;
-} */
 
 @media screen and (max-width: 1100px) {
 	:root {

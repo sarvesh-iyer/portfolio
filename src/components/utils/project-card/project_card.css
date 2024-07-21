@@ -1,5 +1,6 @@
 .project-card-container {
     align-items: center;
+    padding-bottom: 120px;
 }
 .project-card-container .right-container {
     padding-left: 32px;

@@ -1,0 +1,21 @@
+.capsule {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 100%;
+	text-transform: uppercase;
+	color: var(--primary-white);
+	border: 1px solid var(--secondary-hover-dark);
+	padding: 15px 30px;
+	border-radius: 999px;
+}
+
+.capsule img {
+    scale: 0.35;
+	transition: all .128s linear;
+}
+.capsule:hover {
+	border: 1px solid var(--secondary-white);
+}
+.capsule:hover img {
+	scale: 1;
+}

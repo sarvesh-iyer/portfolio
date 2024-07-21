@@ -11,7 +11,7 @@ export const Home = () => {
             <Divider />
             <FeaturedProjects />
             <Divider />
-            <AboutMe />
+            <AboutMe showMore={true} />
         </>
     )
 }

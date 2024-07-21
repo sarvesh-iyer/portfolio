@@ -8,7 +8,6 @@ export const ActionButton = (props) => {
     let {
         children,
         customClass,
-        showIcon,
         icon
     } = props
 
@@ -17,11 +16,11 @@ export const ActionButton = (props) => {
             className={[
                 "action-btn flex items-center",
                 customClass,
-                !showIcon && "pr-6"
+                !icon && "pr-6"
             ].join(' ')}
         >
             {children}
-            {showIcon && (
+            {icon && (
                 <div className="animated-arrow-container">
                     <span className="animated-arrow transition-effect">
                         {icon}

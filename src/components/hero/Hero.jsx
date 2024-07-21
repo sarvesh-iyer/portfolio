@@ -19,7 +19,6 @@ export const Hero = () => {
                     </p>
                     <div className="contact-button-group space-x-4">
                         <ActionButton 
-                            showIcon={true}
                             icon={<NorthEastIcon />}
                         >
                             Contact me
