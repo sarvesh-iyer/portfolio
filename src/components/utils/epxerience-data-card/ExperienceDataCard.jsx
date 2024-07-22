@@ -1,17 +1,27 @@
 import React from 'react'
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
-export const ExperienceDataCard = () => {
+export const ExperienceDataCard = (props) => {
+    let {data} = props
+
     return (
         <div>
             <div className="role-wrapper">
-                <h4 className="role-name">React developer</h4>
-                <span className="period">March 2022 - Present</span>
+                <h4 className="role-name">{data.role}</h4>
+                <span className="period">{data.period}</span>
             </div>
-            <div className="company-name">
-                Ailaysa
-            </div>
-            <p className="work-description">
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            <a 
+                href={data.link}
+                target='_blank'
+                className="company-name"
+            >
+                {data.organization}
+                <div className="flex items-center gap-1 ml-4">
+                    <LocationOnIcon style={{fontSize: '20px'}} />
+                    {data.location}
+                </div>
+            </a>
+            <p className="work-description" dangerouslySetInnerHTML={{__html: data.description}}>
             </p>
         </div>
     )
