@@ -10,27 +10,53 @@ export const AnimatedLink = (props) => {
         samePage, 
         noAccentColor,
         inheritFontSize,
-        icon
+        icon,
+        isbutton,
+        onClick
     } = props
 
+    const handleOnClick = (e) => {
+        if(onClick) onClick(e)
+    }
+
     return (
-        <Link
-            to={link}
-            target={samePage ? '_self' : '_blank'}
-            className={[
-                "animated-underline transition inline-flex items-center",
-                noAccentColor && "no-accent-color",
-                customClass
-            ].join(' ')}
-            style={inheritFontSize ? {fontSize: 'inherit'} : {}}
-        >
-            {children}
-            
-            {icon && (
-                <span className="ml-1">
-                    {icon}
-                </span>
-            )}
-        </Link>
+        !isbutton ? (
+            <Link
+                to={link}
+                target={samePage ? '_self' : '_blank'}
+                className={[
+                    "animated-underline transition inline-flex items-center",
+                    noAccentColor && "no-accent-color",
+                    customClass
+                ].join(' ')}
+                style={inheritFontSize ? {fontSize: 'inherit'} : {}}
+            >
+                {children}
+                
+                {icon && (
+                    <span className="ml-1">
+                        {icon}
+                    </span>
+                )}
+            </Link>
+        ) : (
+            <button
+                onClick={handleOnClick}
+                className={[
+                    "animated-underline transition inline-flex items-center",
+                    noAccentColor && "no-accent-color",
+                    customClass
+                ].join(' ')}
+                style={inheritFontSize ? {fontSize: 'inherit'} : {}}
+            >
+                {children}
+                
+                {icon && (
+                    <span className="ml-1">
+                        {icon}
+                    </span>
+                )}
+            </button>
+        )
     )
 }

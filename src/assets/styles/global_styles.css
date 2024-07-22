@@ -114,6 +114,15 @@ h4 {
 	letter-spacing: -1%;
 }
 
+fade {
+    position: absolute;
+    bottom: 30px;
+    display: block;
+    width: 90%;
+    height: 50px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #0A0A0A 100%);
+}
+
 :root {
 	--accent-color: #D3E97A;
 	--primary-white: #FFFFFF;
