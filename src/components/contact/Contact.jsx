@@ -7,7 +7,7 @@ import { AnimatedLink } from '../utils/animated-link/AnimatedLink'
 
 export const Contact = () => {
     return (
-        <section className="section-wrapper">
+        <section id='contact' className="section-wrapper">
             <div className="section-container contact-container">
                 <div className="left-container">
                     <div>

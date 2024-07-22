@@ -1,8 +1,8 @@
 export const navDataList = [
     {
         id: 1,
-        name: "Work",
-        link: "/work"
+        name: "Projects",
+        link: "/projects"
     },
     {
         id: 2,
@@ -12,6 +12,6 @@ export const navDataList = [
     {
         id: 3,
         name: "Contact",
-        link: "/contact"
+        link: "#contact"
     },
 ]
