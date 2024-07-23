@@ -1,5 +1,6 @@
 import React from 'react'
 import { ProjectCard } from '../utils/project-card/ProjectCard'
+import { projectsData } from '../../data/projectsData'
 
 export const FeaturedProjects = () => {
     return (
@@ -11,8 +12,12 @@ export const FeaturedProjects = () => {
                 </div>
                 <div className="right-container"></div>
             </div>
-            <ProjectCard />
-            <ProjectCard langsmart={true} />
+            {projectsData.slice(0,3).map(project => (
+                <ProjectCard
+                    key={project.id}
+                    data={project} 
+                />
+            ))}
         </section>
     )
 }
