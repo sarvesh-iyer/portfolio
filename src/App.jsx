@@ -2,6 +2,7 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import { RootLayout } from './layouts/RootLayout'
 import { Home } from './pages/Home'
 import { About } from './pages/About'
+import { Projects } from './pages/Projects'
 
 function App() {
 
@@ -10,6 +11,9 @@ function App() {
 			<Route path='/' element={<RootLayout />}>
 				<Route path='/' element={<Home />} />
 				<Route path='about' element={<About />} />
+				<Route path='projects' element={<Projects />}>
+					<Route path=':id' element={<Projects />} />
+				</Route>
 			</Route>
 		)
 	)
