@@ -23,9 +23,9 @@ export const ProjectCard = (props) => {
                     )}
                     <div className="image-container">
                         <img 
-                            src={data.image} 
+                            src={data.coverImage} 
                             alt={data.name}
-                            className="w-full h-full object-cover" 
+                            className="w-full h-full object-cover object-top" 
                         />
                     </div>
                 </div>

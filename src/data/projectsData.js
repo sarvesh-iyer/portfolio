@@ -1,3 +1,10 @@
+import Ailaysa from '../assets/images/projects/ailaysa.png'
+import Langsmart from '../assets/images/projects/langsmart.png'
+import MonksOfMethod from '../assets/images/projects/monks-of-method.png'
+import InteriorHarmony from '../assets/images/projects/interior-harmony.png'
+import CityEcommerce from '../assets/images/projects/city-ecommerce.png'
+import ParkingSystem from '../assets/images/projects/parking-system.png'
+
 export const projectsData = [
     {
         id: 1,
@@ -10,7 +17,7 @@ export const projectsData = [
         },
         siteLink: "https://ailaysa.com/",
         githubLink: "",
-        image: "",
+        coverImage: Ailaysa,
         tag: "SaaS product",
         techStack: [
             {
@@ -31,7 +38,7 @@ export const projectsData = [
         },
         siteLink: "https://langsmart.com/",
         githubLink: "",
-        image: "",
+        coverImage: Langsmart,
         tag: "",
         techStack: [
             {
@@ -52,7 +59,7 @@ export const projectsData = [
         },
         siteLink: "https://monksofmethod.com/",
         githubLink: "",
-        image: "",
+        coverImage: MonksOfMethod,
         tag: "",
         techStack: [
             {
@@ -63,18 +70,18 @@ export const projectsData = [
         ]
     },
     {
-        id: 4,
-        pageLink: "/projects/4",
-        name: "Ailaysa UI Library",
+        id: 7,
+        pageLink: "/projects/7",
+        name: "UI Component Library",
         description: "",
         attributes: {
             // "Role": "Front-end(Shopify theme) developer",
             "Technologies": "",
         },
         siteLink: "",
-        githubLink: "",
-        image: "",
-        tag: "",
+        githubLink: "https://github.com/sarvesh-iyer/ui-component-library",
+        coverImage: "",
+        tag: "Component library",
         techStack: [
             {
                 id: 1,
@@ -94,7 +101,7 @@ export const projectsData = [
         },
         siteLink: "https://polymanager.netlify.app/",
         githubLink: "https://github.com/sarvesh-iyer/electron-policy-manager",
-        image: "",
+        coverImage: "",
         tag: "Web Application",
         techStack: [
             {
@@ -115,7 +122,7 @@ export const projectsData = [
         },
         siteLink: "https://www.npmjs.com/package/cookie-validator-check",
         githubLink: "https://github.com/sarvesh-iyer/cookie-validator-check",
-        image: "",
+        coverImage: "",
         tag: "Npm package",
         techStack: [
             {
@@ -125,27 +132,7 @@ export const projectsData = [
             }
         ]
     },
-    {
-        id: 7,
-        pageLink: "/projects/7",
-        name: "UI Component Library",
-        description: "",
-        attributes: {
-            // "Role": "Front-end(Shopify theme) developer",
-            "Technologies": "",
-        },
-        siteLink: "",
-        githubLink: "https://github.com/sarvesh-iyer/ui-component-library",
-        image: "",
-        tag: "Component library",
-        techStack: [
-            {
-                id: 1,
-                name: "",
-                icon: ""
-            }
-        ]
-    },
+    
     {
         id: 8,
         pageLink: "/projects/8",
@@ -157,7 +144,7 @@ export const projectsData = [
         },
         siteLink: "https://my-interior-website.netlify.app/",
         githubLink: "https://github.com/sarvesh-iyer/interior-designing-website-landing-page",
-        image: "",
+        coverImage: InteriorHarmony,
         tag: "Static Website",
         techStack: [
             {
@@ -178,7 +165,7 @@ export const projectsData = [
         },
         siteLink: "",
         githubLink: "https://github.com/sarvesh-iyer/custom-rich-text-editor",
-        image: "",
+        coverImage: "",
         tag: "Wysiwyg editor",
         techStack: [
             {
@@ -199,7 +186,7 @@ export const projectsData = [
         },
         siteLink: "https://firebase-news-panel.netlify.app/",
         githubLink: "https://github.com/sarvesh-iyer/Firebase-News-Panel-react.js",
-        image: "",
+        coverImage: "",
         tag: "Web Application",
         techStack: [
             {
@@ -220,7 +207,7 @@ export const projectsData = [
         },
         siteLink: "https://city-ecommerce.netlify.app/",
         githubLink: "https://github.com/sarvesh-iyer/City-Ecommerce-Website",
-        image: "",
+        coverImage: CityEcommerce,
         tag: "Static website",
         techStack: [
             {
@@ -241,7 +228,7 @@ export const projectsData = [
         },
         siteLink: "",
         githubLink: "https://github.com/sarvesh-iyer/Smart-Parking-System-IOT",
-        image: "",
+        coverImage: ParkingSystem,
         tag: "IOT",
         techStack: [
             {
