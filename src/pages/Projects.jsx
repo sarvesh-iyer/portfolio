@@ -30,7 +30,7 @@ export const Projects = () => {
                 <div className="left-container">
                     {!project?.name ? (
                         <>
-                            <h1>Projects</h1>
+                            <h1>My Works</h1>
                             <p className='mt-2'>Here are my projects that showcase my passion for front-end development.</p>
                         </>
                     ) : (

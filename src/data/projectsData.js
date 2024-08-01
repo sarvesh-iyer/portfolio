@@ -1,7 +1,17 @@
+import Ailaysa from '../assets/images/projects/ailaysa.png'
+import Langsmart from '../assets/images/projects/langsmart.png'
+import MonksOfMethod from '../assets/images/projects/monks-of-method.png'
+import InteriorHarmony from '../assets/images/projects/interior-harmony.png'
+import CityEcommerce from '../assets/images/projects/city-ecommerce.png'
+import ParkingSystem from '../assets/images/projects/parking-system.png'
+import RTE from '../assets/images/projects/custom-rte.png'
+import ComponentLib from '../assets/images/projects/component-library.png'
+import NewsPortal from '../assets/images/projects/news-portal.png'
+
 export const projectsData = [
     {
         id: 1,
-        pageLink: "/projects/1",
+        pageLink: "/works/1",
         name: "Ailaysa",
         description: "Ailaysa is an AI-powered, multilingual, and multimodal content development and localization platform.",
         attributes: {
@@ -10,7 +20,7 @@ export const projectsData = [
         },
         siteLink: "https://ailaysa.com/",
         githubLink: "",
-        image: "",
+        coverImage: Ailaysa,
         tag: "SaaS product",
         techStack: [
             {
@@ -22,7 +32,7 @@ export const projectsData = [
     },
     {
         id: 2,
-        pageLink: "/projects/2",
+        pageLink: "/works/2",
         name: "Langsmart",
         description: "Langsmart provides a wide range of partnership opportunities for both sell-side and buy-side entities.",
         attributes: {
@@ -31,7 +41,7 @@ export const projectsData = [
         },
         siteLink: "https://langsmart.com/",
         githubLink: "",
-        image: "",
+        coverImage: Langsmart,
         tag: "",
         techStack: [
             {
@@ -43,7 +53,7 @@ export const projectsData = [
     },
     {
         id: 3,
-        pageLink: "/projects/3",
+        pageLink: "/works/3",
         name: "Monks of Methods",
         description: "",
         attributes: {
@@ -52,7 +62,7 @@ export const projectsData = [
         },
         siteLink: "https://monksofmethod.com/",
         githubLink: "",
-        image: "",
+        coverImage: MonksOfMethod,
         tag: "",
         techStack: [
             {
@@ -63,18 +73,18 @@ export const projectsData = [
         ]
     },
     {
-        id: 4,
-        pageLink: "/projects/4",
-        name: "Ailaysa UI Library",
+        id: 7,
+        pageLink: "/works/7",
+        name: "UI Component Library",
         description: "",
         attributes: {
             // "Role": "Front-end(Shopify theme) developer",
             "Technologies": "",
         },
-        siteLink: "",
-        githubLink: "",
-        image: "",
-        tag: "",
+        siteLink: "https://ui-component-storybook.netlify.app/",
+        githubLink: "https://github.com/sarvesh-iyer/ui-component-library",
+        coverImage: ComponentLib,
+        tag: "Component library",
         techStack: [
             {
                 id: 1,
@@ -85,7 +95,7 @@ export const projectsData = [
     },
     {
         id: 5,
-        pageLink: "/projects/5",
+        pageLink: "/works/5",
         name: "Policy Manager",
         description: "",
         attributes: {
@@ -94,7 +104,7 @@ export const projectsData = [
         },
         siteLink: "https://polymanager.netlify.app/",
         githubLink: "https://github.com/sarvesh-iyer/electron-policy-manager",
-        image: "",
+        coverImage: "",
         tag: "Web Application",
         techStack: [
             {
@@ -106,7 +116,7 @@ export const projectsData = [
     },
     {
         id: 6,
-        pageLink: "/projects/6",
+        pageLink: "/works/6",
         name: "Cookie Validator Check",
         description: "",
         attributes: {
@@ -115,7 +125,7 @@ export const projectsData = [
         },
         siteLink: "https://www.npmjs.com/package/cookie-validator-check",
         githubLink: "https://github.com/sarvesh-iyer/cookie-validator-check",
-        image: "",
+        coverImage: "",
         tag: "Npm package",
         techStack: [
             {
@@ -125,30 +135,10 @@ export const projectsData = [
             }
         ]
     },
-    {
-        id: 7,
-        pageLink: "/projects/7",
-        name: "UI Component Library",
-        description: "",
-        attributes: {
-            // "Role": "Front-end(Shopify theme) developer",
-            "Technologies": "",
-        },
-        siteLink: "",
-        githubLink: "https://github.com/sarvesh-iyer/ui-component-library",
-        image: "",
-        tag: "Component library",
-        techStack: [
-            {
-                id: 1,
-                name: "",
-                icon: ""
-            }
-        ]
-    },
+    
     {
         id: 8,
-        pageLink: "/projects/8",
+        pageLink: "/works/8",
         name: "Interior Harmony",
         description: "",
         attributes: {
@@ -157,7 +147,7 @@ export const projectsData = [
         },
         siteLink: "https://my-interior-website.netlify.app/",
         githubLink: "https://github.com/sarvesh-iyer/interior-designing-website-landing-page",
-        image: "",
+        coverImage: InteriorHarmony,
         tag: "Static Website",
         techStack: [
             {
@@ -169,16 +159,16 @@ export const projectsData = [
     },
     {
         id: 9,
-        pageLink: "/projects/9",
+        pageLink: "/works/9",
         name: "Custom Rich Text Editor",
         description: "",
         attributes: {
             // "Role": "Front-end(Shopify theme) developer",
             "Technologies": "",
         },
-        siteLink: "",
+        siteLink: "https://custom-rte.netlify.app/",
         githubLink: "https://github.com/sarvesh-iyer/custom-rich-text-editor",
-        image: "",
+        coverImage: RTE,
         tag: "Wysiwyg editor",
         techStack: [
             {
@@ -190,7 +180,7 @@ export const projectsData = [
     },
     {
         id: 10,
-        pageLink: "/projects/10",
+        pageLink: "/works/10",
         name: "Firebase News Panel",
         description: "",
         attributes: {
@@ -199,7 +189,7 @@ export const projectsData = [
         },
         siteLink: "https://firebase-news-panel.netlify.app/",
         githubLink: "https://github.com/sarvesh-iyer/Firebase-News-Panel-react.js",
-        image: "",
+        coverImage: NewsPortal,
         tag: "Web Application",
         techStack: [
             {
@@ -211,7 +201,7 @@ export const projectsData = [
     },
     {
         id: 11,
-        pageLink: "/projects/11",
+        pageLink: "/works/11",
         name: "City E-commerce",
         description: "",
         attributes: {
@@ -220,7 +210,7 @@ export const projectsData = [
         },
         siteLink: "https://city-ecommerce.netlify.app/",
         githubLink: "https://github.com/sarvesh-iyer/City-Ecommerce-Website",
-        image: "",
+        coverImage: CityEcommerce,
         tag: "Static website",
         techStack: [
             {
@@ -232,7 +222,7 @@ export const projectsData = [
     },
     {
         id: 12,
-        pageLink: "/projects/12",
+        pageLink: "/works/12",
         name: "Smart Parking System",
         description: "",
         attributes: {
@@ -241,7 +231,7 @@ export const projectsData = [
         },
         siteLink: "",
         githubLink: "https://github.com/sarvesh-iyer/Smart-Parking-System-IOT",
-        image: "",
+        coverImage: ParkingSystem,
         tag: "IOT",
         techStack: [
             {
