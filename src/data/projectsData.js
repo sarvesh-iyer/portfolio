@@ -7,6 +7,7 @@ import ParkingSystem from '../assets/images/projects/parking-system.png'
 import RTE from '../assets/images/projects/custom-rte.png'
 import ComponentLib from '../assets/images/projects/component-library.png'
 import NewsPortal from '../assets/images/projects/news-portal.png'
+import { skillsList } from './skillsList'
 
 export const projectsData = [
     {
@@ -22,13 +23,9 @@ export const projectsData = [
         githubLink: "",
         coverImage: Ailaysa,
         tag: "SaaS product",
-        techStack: [
-            {
-                id: 1,
-                name: "",
-                icon: ""
-            }
-        ]
+        techStack: skillsList.filter(each => [
+            1,2,3,4,5,6,10,11,13,14,15,20,21
+        ].includes(each.id))
     },
     {
         id: 2,
@@ -43,13 +40,9 @@ export const projectsData = [
         githubLink: "",
         coverImage: Langsmart,
         tag: "",
-        techStack: [
-            {
-                id: 1,
-                name: "",
-                icon: ""
-            }
-        ]
+        techStack: skillsList.filter(each => [
+            1,3,5,10,12,13,21
+        ].includes(each.id))
     },
     {
         id: 3,
@@ -64,13 +57,9 @@ export const projectsData = [
         githubLink: "",
         coverImage: MonksOfMethod,
         tag: "",
-        techStack: [
-            {
-                id: 1,
-                name: "",
-                icon: ""
-            }
-        ]
+        techStack: skillsList.filter(each => [
+            17,7,8,9,10,12,13,21
+        ].includes(each.id))
     },
     {
         id: 7,
@@ -85,13 +74,9 @@ export const projectsData = [
         githubLink: "https://github.com/sarvesh-iyer/ui-component-library",
         coverImage: ComponentLib,
         tag: "Component library",
-        techStack: [
-            {
-                id: 1,
-                name: "",
-                icon: ""
-            }
-        ]
+        techStack: skillsList.filter(each => [
+            1,4,5,13
+        ].includes(each.id))
     },
     {
         id: 5,
@@ -106,13 +91,9 @@ export const projectsData = [
         githubLink: "https://github.com/sarvesh-iyer/electron-policy-manager",
         coverImage: "",
         tag: "Web Application",
-        techStack: [
-            {
-                id: 1,
-                name: "",
-                icon: ""
-            }
-        ]
+        techStack: skillsList.filter(each => [
+            1,2,3,5,10,12,13,16,21
+        ].includes(each.id))
     },
     {
         id: 6,
@@ -127,13 +108,9 @@ export const projectsData = [
         githubLink: "https://github.com/sarvesh-iyer/cookie-validator-check",
         coverImage: "",
         tag: "Npm package",
-        techStack: [
-            {
-                id: 1,
-                name: "",
-                icon: ""
-            }
-        ]
+        techStack: skillsList.filter(each => [
+            23,5
+        ].includes(each.id))
     },
     
     {
@@ -149,13 +126,9 @@ export const projectsData = [
         githubLink: "https://github.com/sarvesh-iyer/interior-designing-website-landing-page",
         coverImage: InteriorHarmony,
         tag: "Static Website",
-        techStack: [
-            {
-                id: 1,
-                name: "",
-                icon: ""
-            }
-        ]
+        techStack: skillsList.filter(each => [
+            1,8,9,7,13
+        ].includes(each.id))
     },
     {
         id: 9,
@@ -170,13 +143,9 @@ export const projectsData = [
         githubLink: "https://github.com/sarvesh-iyer/custom-rich-text-editor",
         coverImage: RTE,
         tag: "Wysiwyg editor",
-        techStack: [
-            {
-                id: 1,
-                name: "",
-                icon: ""
-            }
-        ]
+        techStack: skillsList.filter(each => [
+            1,57,8,9,13
+        ].includes(each.id))
     },
     {
         id: 10,
@@ -191,13 +160,9 @@ export const projectsData = [
         githubLink: "https://github.com/sarvesh-iyer/Firebase-News-Panel-react.js",
         coverImage: NewsPortal,
         tag: "Web Application",
-        techStack: [
-            {
-                id: 1,
-                name: "",
-                icon: ""
-            }
-        ]
+        techStack: skillsList.filter(each => [
+            1,5,7,8,9,12,13
+        ].includes(each.id))
     },
     {
         id: 11,
@@ -212,13 +177,9 @@ export const projectsData = [
         githubLink: "https://github.com/sarvesh-iyer/City-Ecommerce-Website",
         coverImage: CityEcommerce,
         tag: "Static website",
-        techStack: [
-            {
-                id: 1,
-                name: "",
-                icon: ""
-            }
-        ]
+        techStack: skillsList.filter(each => [
+            8,9,11,7,13
+        ].includes(each.id))
     },
     {
         id: 12,
@@ -233,12 +194,8 @@ export const projectsData = [
         githubLink: "https://github.com/sarvesh-iyer/Smart-Parking-System-IOT",
         coverImage: ParkingSystem,
         tag: "IOT",
-        techStack: [
-            {
-                id: 1,
-                name: "",
-                icon: ""
-            }
-        ]
+        techStack: skillsList.filter(each => [
+            22
+        ].includes(each.id))
     },
 ]
