@@ -1,4 +1,5 @@
 import React from 'react'
+import { ImageCard } from '../utils/image-card/ImageCard'
 
 export const ProjectInfo = (props) => {
     let { project } = props

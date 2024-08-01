@@ -6,16 +6,22 @@ import { Divider } from '../divider/Divider'
 import { AnimatedLink } from '../animated-link/AnimatedLink'
 import NorthEastIcon from '@mui/icons-material/NorthEast';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 export const ProjectCard = (props) => {
 
     let {data} = props
 
+    const navigate = useNavigate()
+
+    const handleImgCardClick = () => {
+        window.open(data.siteLink)
+    } 
+
     return (
         <div className="section-container project-card-container">
             <div className="left-container">
-                <div className="project-image-container-card">
+                <div className="project-image-container-card" onClick={handleImgCardClick}>
                     {data.tag && (
                         <div className="project-tag">
                             {data.tag}
@@ -25,7 +31,7 @@ export const ProjectCard = (props) => {
                         <img 
                             src={data.coverImage} 
                             alt={data.name}
-                            className="w-full h-full object-cover object-top" 
+                            className="w-full h-full object-cover object-left-top" 
                         />
                     </div>
                 </div>

@@ -7,8 +7,8 @@ export const FeaturedProjects = () => {
         <section className="section-wrapper">
             <div className="section-container featured-project-container">
                 <div className="left-container">
-                    <h2>Featured Projects</h2>
-                    <p className='mt-2'>Here are some of the selected projects that showcase my passion for front-end development.</p>
+                    <h2>Featured Works</h2>
+                    <p className='mt-2'>Here are some of the selected works that showcase my passion for front-end development.</p>
                 </div>
                 <div className="right-container"></div>
             </div>

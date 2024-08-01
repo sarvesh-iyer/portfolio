@@ -4,11 +4,14 @@ import MonksOfMethod from '../assets/images/projects/monks-of-method.png'
 import InteriorHarmony from '../assets/images/projects/interior-harmony.png'
 import CityEcommerce from '../assets/images/projects/city-ecommerce.png'
 import ParkingSystem from '../assets/images/projects/parking-system.png'
+import RTE from '../assets/images/projects/custom-rte.png'
+import ComponentLib from '../assets/images/projects/component-library.png'
+import NewsPortal from '../assets/images/projects/news-portal.png'
 
 export const projectsData = [
     {
         id: 1,
-        pageLink: "/projects/1",
+        pageLink: "/works/1",
         name: "Ailaysa",
         description: "Ailaysa is an AI-powered, multilingual, and multimodal content development and localization platform.",
         attributes: {
@@ -29,7 +32,7 @@ export const projectsData = [
     },
     {
         id: 2,
-        pageLink: "/projects/2",
+        pageLink: "/works/2",
         name: "Langsmart",
         description: "Langsmart provides a wide range of partnership opportunities for both sell-side and buy-side entities.",
         attributes: {
@@ -50,7 +53,7 @@ export const projectsData = [
     },
     {
         id: 3,
-        pageLink: "/projects/3",
+        pageLink: "/works/3",
         name: "Monks of Methods",
         description: "",
         attributes: {
@@ -71,16 +74,16 @@ export const projectsData = [
     },
     {
         id: 7,
-        pageLink: "/projects/7",
+        pageLink: "/works/7",
         name: "UI Component Library",
         description: "",
         attributes: {
             // "Role": "Front-end(Shopify theme) developer",
             "Technologies": "",
         },
-        siteLink: "",
+        siteLink: "https://ui-component-storybook.netlify.app/",
         githubLink: "https://github.com/sarvesh-iyer/ui-component-library",
-        coverImage: "",
+        coverImage: ComponentLib,
         tag: "Component library",
         techStack: [
             {
@@ -92,7 +95,7 @@ export const projectsData = [
     },
     {
         id: 5,
-        pageLink: "/projects/5",
+        pageLink: "/works/5",
         name: "Policy Manager",
         description: "",
         attributes: {
@@ -113,7 +116,7 @@ export const projectsData = [
     },
     {
         id: 6,
-        pageLink: "/projects/6",
+        pageLink: "/works/6",
         name: "Cookie Validator Check",
         description: "",
         attributes: {
@@ -135,7 +138,7 @@ export const projectsData = [
     
     {
         id: 8,
-        pageLink: "/projects/8",
+        pageLink: "/works/8",
         name: "Interior Harmony",
         description: "",
         attributes: {
@@ -156,16 +159,16 @@ export const projectsData = [
     },
     {
         id: 9,
-        pageLink: "/projects/9",
+        pageLink: "/works/9",
         name: "Custom Rich Text Editor",
         description: "",
         attributes: {
             // "Role": "Front-end(Shopify theme) developer",
             "Technologies": "",
         },
-        siteLink: "",
+        siteLink: "https://custom-rte.netlify.app/",
         githubLink: "https://github.com/sarvesh-iyer/custom-rich-text-editor",
-        coverImage: "",
+        coverImage: RTE,
         tag: "Wysiwyg editor",
         techStack: [
             {
@@ -177,7 +180,7 @@ export const projectsData = [
     },
     {
         id: 10,
-        pageLink: "/projects/10",
+        pageLink: "/works/10",
         name: "Firebase News Panel",
         description: "",
         attributes: {
@@ -186,7 +189,7 @@ export const projectsData = [
         },
         siteLink: "https://firebase-news-panel.netlify.app/",
         githubLink: "https://github.com/sarvesh-iyer/Firebase-News-Panel-react.js",
-        coverImage: "",
+        coverImage: NewsPortal,
         tag: "Web Application",
         techStack: [
             {
@@ -198,7 +201,7 @@ export const projectsData = [
     },
     {
         id: 11,
-        pageLink: "/projects/11",
+        pageLink: "/works/11",
         name: "City E-commerce",
         description: "",
         attributes: {
@@ -219,7 +222,7 @@ export const projectsData = [
     },
     {
         id: 12,
-        pageLink: "/projects/12",
+        pageLink: "/works/12",
         name: "Smart Parking System",
         description: "",
         attributes: {
