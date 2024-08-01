@@ -7,6 +7,7 @@ import { AnimatedLink } from '../animated-link/AnimatedLink'
 import NorthEastIcon from '@mui/icons-material/NorthEast';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { Link, useNavigate } from 'react-router-dom'
+import { Tooltip } from '@mui/material'
 
 export const ProjectCard = (props) => {
 
@@ -51,6 +52,19 @@ export const ProjectCard = (props) => {
                             <Divider customClass="my-0" />
                         </React.Fragment>
                     ))}
+                    <div className="flex justify-between items-center">
+                        <p className="attribute">Tech stack</p>
+                        <p className="value flex gap-3">
+                            {data.techStack.map(each => (
+                                <Tooltip title={each.name} arrow placement='top'>
+                                    <a href={each.link} target='_blank'>
+                                        <img src={each.img} alt={each.name} width={25} />
+                                    </a>
+                                </Tooltip>
+                            ))}
+                        </p>
+                    </div>
+                    <Divider customClass="my-0" />
                 </div>
                 <div className="flex items-center space-x-6 mt-12">
                     {data.siteLink && (

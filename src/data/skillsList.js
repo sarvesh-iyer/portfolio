@@ -19,6 +19,8 @@ import JiraIcon from '../assets/images/skills/jira.svg'
 import FigmaIcon from '../assets/images/skills/figma.svg'
 import NginxIcon from '../assets/images/skills/nginx.svg'
 import FirebaseIcon from '../assets/images/skills/firebase.svg'
+import PythonIcon from '../assets/images/skills/python.svg'
+import TypescriptIcon from '../assets/images/skills/typescript.svg'
 
 export const skillsList = [
     {
@@ -146,5 +148,17 @@ export const skillsList = [
         name: 'Figma',
         img: FigmaIcon,
         link: "https://www.figma.com/"
+    },
+    {
+        id: 22,
+        name: 'Python',
+        img: PythonIcon,
+        link: "https://www.python.org/"
+    },
+    {
+        id: 23,
+        name: 'Typescript',
+        img: TypescriptIcon,
+        link: "https://www.typescriptlang.org/"
     },
 ]
