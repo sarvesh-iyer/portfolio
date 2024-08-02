@@ -127,7 +127,7 @@ export const projectsData = [
         coverImage: InteriorHarmony,
         tag: "Static Website",
         techStack: skillsList.filter(each => [
-            1,8,9,7,13
+            1,8,9,7,13,24
         ].includes(each.id))
     },
     {
@@ -161,7 +161,7 @@ export const projectsData = [
         coverImage: NewsPortal,
         tag: "Web Application",
         techStack: skillsList.filter(each => [
-            1,5,7,8,9,12,13
+            1,5,7,8,9,12,13,16
         ].includes(each.id))
     },
     {

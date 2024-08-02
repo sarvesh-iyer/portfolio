@@ -58,7 +58,7 @@ export const ProjectCard = (props) => {
                             {data.techStack.map(each => (
                                 <Tooltip title={each.name} arrow placement='top'>
                                     <a href={each.link} target='_blank'>
-                                        <img src={each.img} alt={each.name} width={25} />
+                                        <img src={each.img} alt={each.name} height={25} />
                                     </a>
                                 </Tooltip>
                             ))}

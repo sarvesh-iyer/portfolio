@@ -21,6 +21,7 @@ import NginxIcon from '../assets/images/skills/nginx.svg'
 import FirebaseIcon from '../assets/images/skills/firebase.svg'
 import PythonIcon from '../assets/images/skills/python.svg'
 import TypescriptIcon from '../assets/images/skills/typescript.svg'
+import EmailJSIcon from '../assets/images/skills/emailjs.svg'
 
 export const skillsList = [
     {
@@ -160,5 +161,11 @@ export const skillsList = [
         name: 'Typescript',
         img: TypescriptIcon,
         link: "https://www.typescriptlang.org/"
+    },
+    {
+        id: 24,
+        name: 'Email JS',
+        img: EmailJSIcon,
+        link: "https://www.emailjs.com/"
     },
 ]
