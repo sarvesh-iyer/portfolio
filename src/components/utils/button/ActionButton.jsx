@@ -8,7 +8,7 @@ export const ActionButton = (props) => {
     let {
         children,
         customClass,
-        icon
+        icon,
     } = props
 
     return (
@@ -18,6 +18,7 @@ export const ActionButton = (props) => {
                 customClass,
                 !icon && "pr-6"
             ].join(' ')}
+            {...props}
         >
             {children}
             {icon && (
