@@ -157,7 +157,7 @@ export const Contact = () => {
                                 <CircularProgress 
                                     sx={{color: "#0A0A0A"}}
                                     style={{ width: "22px", height: "22px" }} 
-                                    className="mr-2"
+                                    className="mr-2 text-black"
                                 />
                             )}
                             {!isSubmitting ? "Submit" : "Submitting"}
