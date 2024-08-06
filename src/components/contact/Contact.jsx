@@ -7,6 +7,7 @@ import { AnimatedLink } from '../utils/animated-link/AnimatedLink'
 import { Helper } from '../../helpers/Helper'
 import emailjs from '@emailjs/browser';
 import { CircularProgress } from '@mui/material'
+import { SuccessModal } from '../utils/modal/SuccessModal'
 
 export const Contact = () => {
 
@@ -26,6 +27,7 @@ export const Contact = () => {
     const [formState, setFormState] = useState(initialFormData)
     const [formValidationState, setFormValidationState] = useState(initialFormValidationData)
     const [isSubmitting, setIsSubmitting] = useState(false)
+    const [openSuccessModal, setOpenSuccessModal] = useState(false)
 
     const formRef = useRef(null)
 
@@ -60,6 +62,7 @@ export const Contact = () => {
 
     const handleFormSubmit = async(e) => {
         e.preventDefault()
+        
         if(!isFormValid()) return
 
         try{
@@ -70,6 +73,7 @@ export const Contact = () => {
             })
 
             setIsSubmitting(false)
+            setOpenSuccessModal(true)
             setFormState(initialFormData)
             setFormValidationState(initialFormValidationData)
 
@@ -157,7 +161,7 @@ export const Contact = () => {
                                 <CircularProgress 
                                     sx={{color: "#0A0A0A"}}
                                     style={{ width: "22px", height: "22px" }} 
-                                    className="mr-2"
+                                    className="mr-2 text-black"
                                 />
                             )}
                             {!isSubmitting ? "Submit" : "Submitting"}
@@ -165,6 +169,10 @@ export const Contact = () => {
                     </form>
                 </div>
             </div>
+            <SuccessModal 
+                open={openSuccessModal}
+                setOpen={setOpenSuccessModal}
+            />
         </section>
     )
 }

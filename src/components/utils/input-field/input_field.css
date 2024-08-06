@@ -26,3 +26,15 @@
 .input-field-wrapper .input-field.error-field {
     border-bottom: 2px solid var(--accent-color);
 }
+
+.input-field:-webkit-autofill,
+.input-field:-webkit-autofill:hover, 
+.input-field:-webkit-autofill:focus, 
+.input-field:-webkit-autofill:active  {
+    color : var(--primary-white) !important;
+    -webkit-text-fill-color: var(--primary-white) !important;
+    -webkit-box-shadow: 0 0 0 1000px var(--secondary-dark) inset !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    transition: background-color 5000s;
+}
