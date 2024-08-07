@@ -39,3 +39,12 @@
 .action-btn:hover svg{ 
     color: var(--primary-white);
 }
+
+@media screen and (max-width: 650px) {
+    .action-btn .animated-arrow{
+        scale: 1;
+    }
+    .action-btn svg{ 
+        color: var(--primary-white);
+    }
+}

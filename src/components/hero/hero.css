@@ -4,7 +4,7 @@
 }
 
 .hero-container .right-container {
-    padding: 25px 85px;
+    padding: 25px 0 25px 85px;
 }
 
 .hero-container .image-container {
@@ -32,3 +32,17 @@
     background-color: var(--secondary-hover-dark);
 }
 
+@media screen and (max-width: 650px) {
+    .hero-container .right-container {
+        padding: 25px 0;
+    }
+    .hero-container {
+        padding-top: 30px;
+    }
+    .hero-container .name {
+        margin-bottom: 16px;
+    }
+    .contact-button-group {
+        margin-top: 32px;
+    }
+}

@@ -56,6 +56,9 @@
 }
 .project-info-wrapper .value {
     color: var(--secondary-white);
+    justify-content: end;
+    margin-left: 16px;
+    text-align: right;
 }
 
 .project-name::before {
@@ -71,7 +74,27 @@
     animation: infinite-underline 3s ease-in-out infinite;
 }
 
+.project-info-wrapper .value .skill-icon {
+    width: 30px;
+}
+
+.project-card-container .action-link {
+    margin-top: 48px;
+}
+
 @keyframes infinite-underline {
     from {left: -100%;}
     to {left: 100%; }
+}
+
+@media screen and (max-width: 650px) {
+    .project-image-container-card {
+        padding: 16% 4%;
+    }
+    .project-info-wrapper .value .skill-icon {
+        width: 25px;
+    }
+    .project-card-container .action-link {
+        margin-top: 35px;
+    }
 }

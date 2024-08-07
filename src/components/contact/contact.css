@@ -26,3 +26,15 @@
     font-size: 16px;
     color: var(--secondary-white);
 }
+.contact-container .foot-note-bottom {
+    display: none;
+}
+
+@media screen and (max-width: 650px) {
+    .contact-container .foot-note {
+        display: none;
+    }
+    .contact-container .foot-note-bottom {
+        display: block;
+    }
+}
