@@ -5,7 +5,7 @@ import './navbar.css'
 
 export const Navbar = () => {
     return (
-        <nav className="navbar-wrapper py-6 px-16 flex justify-between items-center gap-4">
+        <nav className="navbar-wrapper flex justify-between items-center gap-4">
             <Link to="/" className="name-logo">
                 Sarvesh Iyer
             </Link>

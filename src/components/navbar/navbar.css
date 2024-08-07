@@ -4,6 +4,11 @@
     z-index: 99;
     background-color: var(--primary-dark);
 }
+
+.navbar-wrapper{
+    padding: 24px 64px;
+}
+
 nav .name-logo {
     font-family: "Bebas Neue", sans-serif;
     font-size: 32px;
@@ -20,4 +25,20 @@ nav ul li a{
 
 .navbar-shadow {
     box-shadow: 0px 4px 14px 0px var(--secondary-dark);
+}
+
+@media screen and (max-width: 1300px) {
+    .navbar-wrapper{
+        padding: 24px 35px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .navbar-wrapper{
+        padding: 24px 25px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .navbar-wrapper{
+        padding: 24px 20px;
+    }
 }

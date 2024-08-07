@@ -39,7 +39,7 @@ export const Contact = () => {
         })
         setFormValidationState({
             ...formValidationState,
-            [name]: value?.trim() === "" ? true : false
+            [name]: value?.trim() !== "" && false
         })
     } 
 
@@ -167,6 +167,9 @@ export const Contact = () => {
                             {!isSubmitting ? "Submit" : "Submitting"}
                         </ActionButton>
                     </form>
+                    <div className="foot-note foot-note-bottom mt-12">
+                        © 2024 Sarvesh Iyer
+                    </div>
                 </div>
             </div>
             <SuccessModal 

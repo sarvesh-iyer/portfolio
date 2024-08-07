@@ -12,10 +12,22 @@
 .capsule img {
     scale: 0.35;
 	transition: all .128s linear;
+	margin-left: 6px;
+	height: 24px;
 }
 .capsule:hover {
 	border: 1px solid var(--secondary-white);
 }
 .capsule:hover img {
 	scale: 1;
+}
+
+@media screen and (max-width: 650px) {
+	.capsule {
+		font-size: 14px;
+		padding: 10px 22px;
+	}
+	.capsule img {
+		scale: 1;
+	}
 }

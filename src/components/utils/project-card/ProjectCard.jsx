@@ -46,19 +46,19 @@ export const ProjectCard = (props) => {
                     {Object.entries(data.attributes).map(([key, value], index) => (
                         <React.Fragment key={index}>
                             <div key={index} className="flex justify-between items-center">
-                                <p className="attribute">{key}</p>
-                                <p className="value">{value}</p>
+                                <p className="attribute shrink-0">{key}</p>
+                                <p className="value flex-wrap">{value}</p>
                             </div>
                             <Divider customClass="my-0" />
                         </React.Fragment>
                     ))}
                     <div className="flex justify-between items-center">
-                        <p className="attribute">Tech stack</p>
-                        <p className="value flex gap-3">
+                        <p className="attribute shrink-0">Tech stack</p>
+                        <p className="value flex gap-3 flex-wrap ">
                             {data.techStack.map(each => (
                                 <Tooltip title={each.name} arrow placement='top'>
                                     <a href={each.link} target='_blank'>
-                                        <img src={each.img} alt={each.name} height={25} />
+                                        <img className="skill-icon" src={each.img} alt={each.name} />
                                     </a>
                                 </Tooltip>
                             ))}
@@ -66,7 +66,7 @@ export const ProjectCard = (props) => {
                     </div>
                     <Divider customClass="my-0" />
                 </div>
-                <div className="flex items-center space-x-6 mt-12">
+                <div className="action-link flex items-center space-x-6">
                     {data.siteLink && (
                         <AnimatedLink 
                             link={data.siteLink}
