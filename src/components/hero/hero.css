@@ -32,7 +32,38 @@
     background-color: var(--secondary-hover-dark);
 }
 
+@media screen and (max-width: 865px) {
+    .hero-container h1 {
+        font-size: 74px;
+    }
+}
+
+@media screen and (max-width: 745px) {
+    .section-container.hero-container .left-container {
+        width: 55%;
+    }
+    .section-container.hero-container .right-container {
+        width: 45%;
+    }
+    .hero-container .right-container {
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width: 785px) {
+    .hero-container h1 {
+        font-size: 70px;
+    }
+}
+
 @media screen and (max-width: 650px) {
+    .section-container.hero-container .left-container {
+        width: 100%;
+    }
+    .section-container.hero-container .right-container {
+        width: 100%;
+    }
     .hero-container .right-container {
         padding: 25px 0;
     }

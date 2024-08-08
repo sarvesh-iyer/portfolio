@@ -183,25 +183,31 @@ fade {
 		font-size: 90px;
 	}
 }
+
+@media screen and (max-width: 1024px) {
+	.about-me-container .left-container {
+		width: 40%;
+	}
+	.about-me-container .right-container {
+		width: 60%;
+	}
+}
+
 @media screen and (max-width: 950px) { 
 	:root {
 		--global-section-padding: 0px 20px;
 	}
-	h1 {
-		font-size: 82px;
-	}
+	h1 { font-size: 82px; }
+	h2 { font-size: 62px; }
+}
+
+@media screen and (max-width: 770px) { 
+	h2 { font-size: 56px; }
 }
 
 @media screen and (max-width: 650px) {
-	body {
-		/* font-size: 16px; */
-	}
-	h2 {
-		font-size: 66px;
-	}
-	h3 {
-		font-size: 26px;
-	}
+	h2 { font-size: 66px; }
+	h3 { font-size: 26px; }
 	.section-container {
 		flex-direction: column;
 	}

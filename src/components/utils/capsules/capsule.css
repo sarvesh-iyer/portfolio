@@ -22,7 +22,7 @@
 	scale: 1;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 770px) { 
 	.capsule {
 		font-size: 14px;
 		padding: 10px 22px;

@@ -41,7 +41,7 @@ export const Hero = () => {
                 <div className="right-container">
                     <div className="image-container">
                         <img 
-                            src={MyPic} 
+                            src={MyPic}
                             alt="sarvesh iyer"
                             className='w-full h-full object-cover' 
                         />
