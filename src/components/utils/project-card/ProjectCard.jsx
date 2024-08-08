@@ -30,6 +30,7 @@ export const ProjectCard = (props) => {
                     )}
                     <div className="image-container">
                         <img 
+                            loading="lazy"
                             src={data.coverImage} 
                             alt={data.name}
                             className="w-full h-full object-cover object-left-top" 
@@ -56,9 +57,13 @@ export const ProjectCard = (props) => {
                         <p className="attribute shrink-0">Tech stack</p>
                         <p className="value flex gap-3 flex-wrap ">
                             {data.techStack.map(each => (
-                                <Tooltip title={each.name} arrow placement='top'>
+                                <Tooltip title={each.name} arrow placement='top' key={each.id}>
                                     <a href={each.link} target='_blank'>
-                                        <img className="skill-icon" src={each.img} alt={each.name} />
+                                        <img 
+                                            className="skill-icon" 
+                                            src={each.img} 
+                                            alt={each.name} 
+                                        />
                                     </a>
                                 </Tooltip>
                             ))}

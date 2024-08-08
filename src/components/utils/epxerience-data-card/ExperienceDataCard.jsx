@@ -16,7 +16,7 @@ export const ExperienceDataCard = (props) => {
                 className="company-name"
             >
                 {data.organization}
-                <div className="flex items-center gap-1 ml-4">
+                <div className="flex items-center gap-1 -ml-1">
                     <LocationOnIcon style={{fontSize: '20px'}} />
                     {data.location}
                 </div>

@@ -5,6 +5,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 8px;
+    flex-wrap: wrap;
 }
 .role-wrapper .period {
     font-size: 18px;
@@ -23,8 +25,25 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 8px;
+    flex-wrap: wrap;
 }
 
 .work-description b {
     color: var(--primary-white);
+}
+
+@media screen and (max-width: 650px) {
+    .experience-container {
+        padding: 40px 0;
+    }
+    .experience-container h2{
+        margin-bottom: 25px;
+    }
+    .role-wrapper {
+        align-items: flex-start;
+    }
+    .company-name {
+        align-items: flex-start;
+    }
 }
