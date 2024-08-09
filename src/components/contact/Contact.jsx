@@ -167,7 +167,7 @@ export const Contact = () => {
                             {!isSubmitting ? "Submit" : "Submitting"}
                         </ActionButton>
                     </form>
-                    <div className="foot-note foot-note-bottom mt-12">
+                    <div className="foot-note foot-note-bottom my-12">
                         © 2024 Sarvesh Iyer
                     </div>
                 </div>
