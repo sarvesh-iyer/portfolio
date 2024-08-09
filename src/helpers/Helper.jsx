@@ -14,4 +14,39 @@ export const Helper = {
             height: '100%'
         }
     },
+    
+    getScreenSize: () => {
+        return(window.innerWidth)
+    },
+    
+    updateSpecificKeyInList: (list, id, key, value) => {
+        let newArr = list?.map(obj => {
+            if(obj?.id === id){
+                return {
+                    ...obj,
+                    [key]: value
+                }
+            }else{
+                return obj   
+            }
+        })
+        return newArr
+    },
+
+    toggleKeysValueInList: (list, id, key, value) => {
+        let newArr = list?.map(obj => {
+            if(obj?.id === id){
+                return {
+                    ...obj,
+                    [key]: value
+                }
+            }else{
+                return {
+                    ...obj,
+                    [key]: false
+                }   
+            }
+        })
+        return newArr
+    },
 }
