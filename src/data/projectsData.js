@@ -23,7 +23,7 @@ export const projectsData = [
         id: 1,
         pageLink: "/works/1",
         name: "Ailaysa",
-        description: "Ailaysa is an AI-powered, multilingual, and multimodal content development and localization platform.",
+        description: "Ailaysa is an AI-powered, multilingual, and multimodal content development and localization platform. It provides provide content, translation and localization solutions to users using AI technologies.",
         attributes: {
             "Role": "Front-end(React) developer",
             "Technologies": "",
@@ -41,7 +41,7 @@ export const projectsData = [
         id: 2,
         pageLink: "/works/2",
         name: "Langsmart",
-        description: "Langsmart provides a wide range of partnership opportunities for both sell-side and buy-side entities.",
+        description: "Langsmart provides a wide range of partnership opportunities for both sell-side and buy-side entities. It provides a broad spectrum of content and language services tailored to meet cutomer's diverse needs.",
         attributes: {
             "Role": "Front-end(React) developer",
             "Technologies": "",
@@ -59,7 +59,7 @@ export const projectsData = [
         id: 3,
         pageLink: "/works/3",
         name: "Monks of Methods",
-        description: "",
+        description: "Monks of Methods is an e-commerce platform that provides fully customized and tailored wardrobes for men, delivered right to their doorstep, while maintaining transparency in their methods.",
         attributes: {
             "Role": "Front-end(Shopify theme) developer",
             "Technologies": "",

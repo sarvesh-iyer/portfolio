@@ -6,7 +6,7 @@
 }
 
 .navbar-wrapper{
-    padding: 24px 64px;
+    padding: 16px 64px;
 }
 
 nav .name-logo {
@@ -29,17 +29,17 @@ nav ul li a{
 
 @media screen and (max-width: 1300px) {
     .navbar-wrapper{
-        padding: 24px 35px;
+        padding: 16px 35px;
     }
 }
 @media screen and (max-width: 1100px) {
     .navbar-wrapper{
-        padding: 24px 25px;
+        padding: 16px 25px;
     }
 }
 @media screen and (max-width: 950px) {
     .navbar-wrapper{
-        padding: 24px 20px;
+        padding: 16px 20px;
     }
 }
 

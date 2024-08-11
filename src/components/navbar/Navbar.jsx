@@ -49,15 +49,12 @@ export const Navbar = () => {
     const changeActiveStateBasedOnPathname = () => {
         let pathname = window.location.pathname
         if(pathname === "/"){
-            console.log("home");
             let newArr = Helper.toggleKeysValueInList(navDataList, 4, "isActive", navMenuList?.find(each => each?.id === 3)?.isActive ? false : true)
             setNavMenuList(newArr)
         }else if(pathname.includes("works")){
-            console.log('work')
             let newArr = Helper.toggleKeysValueInList(navDataList, 1, "isActive", navMenuList.find(each => each?.id === 3)?.isActive ? false : true)
             setNavMenuList(newArr)
         } else if(pathname.includes("about")) {
-            console.log('about')
             let newArr = Helper.toggleKeysValueInList(navDataList, 2, "isActive", navMenuList.find(each => each?.id === 3)?.isActive ? false : true)
             setNavMenuList(newArr)
         }
@@ -69,7 +66,7 @@ export const Navbar = () => {
                 Sarvesh Iyer
             </Link>
             <ul className='flex space-x-8 items-center'>
-                {navMenuList?.slice(screenWidth >= 650 ? 1 : 0, 4).map(item => (
+                {navMenuList?.slice( 0, 4).map(item => (
                     <li 
                         key={item.id}
                         className={[
@@ -77,7 +74,10 @@ export const Navbar = () => {
                             // item.isActive && "bg-[var(--secondary-hover-dark)]"
                         ].join(' ')}
                     >
-                        <NavLink to={item.link}>
+                        <NavLink 
+                            to={item.link} 
+                            style={item.isActive ? {color: 'var(--accent-color)'} : {}}
+                        >
                             {screenWidth >= 650 ?
                                 item.name :
                                 <img 

@@ -10,19 +10,19 @@ export const RootLayout = () => {
     const navBarRef = useRef(null)
 
     // listen to page scroll and add shadow to navbar when scrolled down
-    // useEffect(() => {
-    //     const handlePageScroll = () => {
-    //         if(window.scrollY > 23){
-    //             navBarRef.current.classList.add("navbar-shadow");
-    //         }else {
-    //             navBarRef.current.classList.remove("navbar-shadow");
-    //         }
-    //     } 
-    //     window.addEventListener('scroll', handlePageScroll)
-    //     return () => {
-    //         window.removeEventListener('scroll', handlePageScroll)
-    //     }
-    // }, [])
+    useEffect(() => {
+        const handlePageScroll = () => {
+            if(window.scrollY > 23){
+                navBarRef.current.classList.add("navbar-shadow");
+            }else {
+                navBarRef.current.classList.remove("navbar-shadow");
+            }
+        } 
+        window.addEventListener('scroll', handlePageScroll)
+        return () => {
+            window.removeEventListener('scroll', handlePageScroll)
+        }
+    }, [])
     
 
     return (

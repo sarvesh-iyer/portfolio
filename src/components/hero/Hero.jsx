@@ -15,7 +15,7 @@ export const Hero = () => {
                         Sarvesh Iyer.
                     </h1>
                     <p>
-                        As a front-end developer, I am deeply committed to creating accessible and user-friendly websites.
+                        As a front-end developer, I specialize in building intuitive, high-performance websites and web apps, while also leading the development and deployment of products from concept to production. 
                     </p>
                     <div className="contact-button-group space-x-4">
                         <ActionButton 

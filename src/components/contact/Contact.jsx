@@ -8,6 +8,8 @@ import { Helper } from '../../helpers/Helper'
 import emailjs from '@emailjs/browser';
 import { CircularProgress } from '@mui/material'
 import { SuccessModal } from '../utils/modal/SuccessModal'
+import EastRoundedIcon from '@mui/icons-material/EastRounded';
+import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
 
 export const Contact = () => {
 
@@ -156,7 +158,10 @@ export const Contact = () => {
                             onChange={handleFormInputChange}
                             isError={formValidationState.message}
                         />
-                        <ActionButton onClick={handleFormSubmit}>
+                        <ActionButton 
+                            onClick={handleFormSubmit}
+                            icon={<EastRoundedIcon />}
+                        >
                             {isSubmitting && (
                                 <CircularProgress 
                                     sx={{color: "#0A0A0A"}}
