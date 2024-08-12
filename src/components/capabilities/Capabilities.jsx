@@ -19,8 +19,10 @@ export const Capabilities = () => {
                     <h2>My Capabilities</h2>
                 </div>
                 <div className="right-container relative">
-                    <p>I am always looking to add more skills.Morbi egestas neque eu blandit fermentum. Nulla ac lobortis ligula. Pellentesque ac ex at purus faucibus tristique ut et dolor. </p>
-                    <Collapse in={showMore} collapsedSize={220}>
+                    <p className="tracking-wide">
+                        I am always looking to add more and more skills in this list. Here are my technical skills and tools that I have refined over time. 
+                    </p>
+                    <Collapse in={showMore} collapsedSize={285}>
                         <div className="flex flex-wrap gap-4 mt-8">
                                 {skillsList.map(skill => (
                                     <Capsule 

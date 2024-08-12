@@ -25,8 +25,17 @@ export const AboutMe = (props) => {
                         I am a front-end developer based in India. <br />
                         Has Computer Science background.
                     </h3>
-                    <p className='mt-4'>
-                        I am a front-end developer based in India looking for exciting opportunities. Has computer science engineering background. Likes to focus on accessibility when developing. Passionate and curious about solving problems. Currently, I'm exploring Reactjs, Webflow and a bit of Designing. While I am not programming, I enjoy playing football, photography and playing Valorant. Learning more to improve skill.
+                    <p className='mt-4 tracking-wide'>
+                        {/* I am a front-end developer based in India looking for exciting opportunities. Has computer science engineering background. Likes to focus on accessibility when developing. Passionate and curious about solving problems. Currently, I'm exploring Reactjs, Webflow and a bit of Designing. While I am not programming, I enjoy playing football, photography and playing Valorant. Learning more to improve skill. */}
+
+                        As a front-end developer with an extensive experience in the React framework, I focus on not just building applications but also ensuring they are production-ready and efficiently deployed. I approach challenges with a progressive mindset and excel in problem-solving, constantly seeking to improve my skills and methodologies.
+                        <br />
+                        I am also adept at learning and teaching others, having successfully mentored and guided individuals in the past. 🫱🏻‍🫲🏼
+                        <br /> <br />
+                        {
+                            window.location.pathname.includes("about") && 
+                            "Currently, I am expanding my expertise by exploring React Native and Electron.js for mobile and desktop app development. Outside of work, I enjoy playing badminton, traveling, and contributing to Google Maps by reviewing and sharing images of the places I visit. My passion for technology and my commitment to continuous learning drive me to deliver high-quality, impactful solutions."
+                        }
                     </p>
                     {showMore ? (
                         <AnimatedLink 

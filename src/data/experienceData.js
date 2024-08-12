@@ -1,7 +1,7 @@
 export const experienceData = [
     {
         id: 1,
-        role: "Lead React developer",
+        role: "React developer",
         organization: "Ailaysa Technologies Pvt. Ltd.",
         location: "Chennai",
         period: "March 2022 - Present",
