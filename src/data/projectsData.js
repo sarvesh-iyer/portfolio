@@ -16,6 +16,7 @@ import ComponentLib from '../assets/images/projects/component-library.png'
 import ComponentLibPlaceholder from '../assets/images/projects-placeholders/component-library.png'
 import NewsPortal from '../assets/images/projects/news-portal.png'
 import NewsPortalPlaceholder from '../assets/images/projects-placeholders/news-portal.png'
+import CookieValidatorCheck from '../assets/images/projects/cookie-validator-check.png'
 import { skillsList } from './skillsList'
 
 export const projectsData = [
@@ -120,7 +121,7 @@ export const projectsData = [
         },
         siteLink: "https://www.npmjs.com/package/cookie-validator-check",
         githubLink: "https://github.com/sarvesh-iyer/cookie-validator-check",
-        coverImage: "",
+        coverImage: CookieValidatorCheck,
         placeholderImg: "",        
         tag: "Npm package",
         techStack: skillsList.filter(each => [

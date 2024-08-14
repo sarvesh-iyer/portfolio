@@ -14,9 +14,10 @@ export const Hero = () => {
                         Hi, I am <br />
                         Sarvesh Iyer.
                     </h1>
-                    <p>
-                        As a front-end developer, I specialize in building intuitive, high-performance websites and web apps, while also leading the development and deployment of products from concept to production. 
+                    <p className='tracking-wide'>
+                        As a front-end developer with <span className="text-[var(--accent-color)] font-semibold">2.5+ year</span> of extensive experience in the <span className="text-[var(--accent-color)] font-semibold">React framework</span>, I specialize in building intuitive, high-performance websites and web apps, while also leading the development and deployment of products from concept to production. 
                     </p>
+
                     <div className="contact-button-group space-x-4">
                         <ActionButton 
                             icon={<NorthEastIcon />}
