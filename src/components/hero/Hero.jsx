@@ -1,4 +1,3 @@
-import React from 'react'
 import { ActionButton } from '../utils/button/ActionButton'
 import './hero.css'
 // import MyPic from '../../assets/images/hero/mypic.png'
@@ -48,7 +47,6 @@ export const Hero = () => {
                             <img 
                                 src={MyPic} alt="Sarvesh Iyer" 
                                 width="300" height="200"
-                                loading="lazy" decoding="async"
                                 className='w-full h-full object-cover' 
                             />
                         </picture>

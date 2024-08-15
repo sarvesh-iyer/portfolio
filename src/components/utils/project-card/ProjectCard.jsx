@@ -15,7 +15,8 @@ export const ProjectCard = (props) => {
     const navigate = useNavigate()
 
     const handleImgCardClick = () => {
-        window.open(data.siteLink)
+        // window.open(data.siteLink)
+        navigate(data.pageLink)
     } 
 
     return (
@@ -65,6 +66,8 @@ export const ProjectCard = (props) => {
                                             className="skill-icon" 
                                             src={each.img} 
                                             alt={each.name}
+                                            width={30}
+                                            height={30}
                                         />
                                     </a>
                                 </Tooltip>

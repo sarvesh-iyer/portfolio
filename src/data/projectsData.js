@@ -9,6 +9,7 @@ import RTE from '../assets/images/projects/custom-rte.png'
 import ComponentLib from '../assets/images/projects/component-library.png'
 import NewsPortal from '../assets/images/projects/news-portal.png'
 import CookieValidatorCheck from '../assets/images/projects/cookie-validator-check.png'
+import PolicyManager from '../assets/images/projects/policy-manager.png'
 // webp imgs
 import AilaysaWebp from '../assets/images/projects/webp/ailaysa.webp'
 import LangsmartWebp from '../assets/images/projects/webp/langsmart.webp'
@@ -20,6 +21,7 @@ import RTEWebp from '../assets/images/projects/webp/custom-rte.webp'
 import ComponentLibWebp from '../assets/images/projects/webp/component-library.webp'
 import NewsPortalWebp from '../assets/images/projects/webp/news-portal.webp'
 import CookieValidatorCheckWebp from '../assets/images/projects/webp/cookie-validator-check.webp'
+import PolicyManagerWebp from '../assets/images/projects/webp/policy-manager.webp'
 // placeholder imgs
 import AilaysaPlaceholder from '../assets/images/projects-placeholders/ailaysa.png'
 import LangsmartPlaceholder from '../assets/images/projects-placeholders/langsmart.png'
@@ -91,6 +93,25 @@ export const projectsData = [
         ].includes(each.id))
     },
     {
+        id: 5,
+        pageLink: "/works/5",
+        name: "Policy Manager",
+        description: "",
+        attributes: {
+            // "Role": "Front-end(Shopify theme) developer",
+            "Technologies": "",
+        },
+        siteLink: "https://polymanager.netlify.app/",
+        githubLink: "https://github.com/sarvesh-iyer/electron-policy-manager",
+        coverImage: PolicyManager,
+        placeholderImg: "",        
+        webpImg: PolicyManagerWebp,
+        tag: "Web Application",
+        techStack: skillsList.filter(each => [
+            1,2,3,5,10,12,13,16,21
+        ].includes(each.id))
+    },
+    {
         id: 7,
         pageLink: "/works/7",
         name: "UI Component Library",
@@ -107,25 +128,6 @@ export const projectsData = [
         tag: "Component library",
         techStack: skillsList.filter(each => [
             1,4,5,13
-        ].includes(each.id))
-    },
-    {
-        id: 5,
-        pageLink: "/works/5",
-        name: "Policy Manager",
-        description: "",
-        attributes: {
-            // "Role": "Front-end(Shopify theme) developer",
-            "Technologies": "",
-        },
-        siteLink: "https://polymanager.netlify.app/",
-        githubLink: "https://github.com/sarvesh-iyer/electron-policy-manager",
-        coverImage: "",
-        placeholderImg: "",        
-        webpImg: "",
-        tag: "Web Application",
-        techStack: skillsList.filter(each => [
-            1,2,3,5,10,12,13,16,21
         ].includes(each.id))
     },
     {
