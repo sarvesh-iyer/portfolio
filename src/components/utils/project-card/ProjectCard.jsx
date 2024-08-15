@@ -1,13 +1,12 @@
 import React from 'react'
 import './project_card.css'
-import Ailaysa from '../../../assets/images/projects/ailaysa.png'
-import Langsmart from '../../../assets/images/projects/langsmart.png'
 import { Divider } from '../divider/Divider'
 import { AnimatedLink } from '../animated-link/AnimatedLink'
 import NorthEastIcon from '@mui/icons-material/NorthEast';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { Link, useNavigate } from 'react-router-dom'
 import { Tooltip } from '@mui/material'
+
 
 export const ProjectCard = (props) => {
 
@@ -29,12 +28,15 @@ export const ProjectCard = (props) => {
                         </div>
                     )}
                     <div className="image-container">
-                        <img 
-                            loading="lazy"
-                            src={data.coverImage} 
-                            alt={data.name}
-                            className="w-full h-full object-cover object-left-top" 
-                        />
+                        <picture>
+                            <source srcSet={data.webpImg} type="image/webp" />
+                            <img 
+                                src={data.coverImage} alt={data.name} 
+                                width="300" height="200"
+                                loading="lazy" decoding="async"
+                                className="w-full h-full object-cover object-left-top" 
+                            />
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -62,7 +64,7 @@ export const ProjectCard = (props) => {
                                         <img 
                                             className="skill-icon" 
                                             src={each.img} 
-                                            alt={each.name} 
+                                            alt={each.name}
                                         />
                                     </a>
                                 </Tooltip>

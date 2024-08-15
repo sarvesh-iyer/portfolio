@@ -1,7 +1,9 @@
 import React from 'react'
 import { ActionButton } from '../utils/button/ActionButton'
 import './hero.css'
-import MyPic from '../../assets/images/hero/mypic.png'
+// import MyPic from '../../assets/images/hero/mypic.png'
+import MyPic from '../../assets/images/hero/pic1.JPG'
+import MyPicWebp from '../../assets/images/hero/pic1.webp'
 import { socialLinksList } from '../../data/socialLinkData'
 import NorthEastIcon from '@mui/icons-material/NorthEast';
 
@@ -41,11 +43,15 @@ export const Hero = () => {
                 </div>
                 <div className="right-container">
                     <div className="image-container">
-                        <img 
-                            src={MyPic}
-                            alt="sarvesh iyer"
-                            className='w-full h-full object-cover' 
-                        />
+                        <picture>
+                            <source srcSet={MyPicWebp} type="image/webp" />
+                            <img 
+                                src={MyPic} alt="Sarvesh Iyer" 
+                                width="300" height="200"
+                                loading="lazy" decoding="async"
+                                className='w-full h-full object-cover' 
+                            />
+                        </picture>
                     </div>
                 </div>
             </div>

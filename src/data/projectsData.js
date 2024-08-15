@@ -1,22 +1,35 @@
+// actual imgs
 import Ailaysa from '../assets/images/projects/ailaysa.png'
-import AilaysaPlaceholder from '../assets/images/projects-placeholders/ailaysa.png'
 import Langsmart from '../assets/images/projects/langsmart.png'
-import LangsmartPlaceholder from '../assets/images/projects-placeholders/langsmart.png'
 import MonksOfMethod from '../assets/images/projects/monks-of-method.png'
-import MonksOfMethodPlaceholder from '../assets/images/projects-placeholders/monks-of-method.png'
 import InteriorHarmony from '../assets/images/projects/interior-harmony.png'
-import InteriorHarmonyPlaceholder from '../assets/images/projects-placeholders/interior-harmony.png'
 import CityEcommerce from '../assets/images/projects/city-ecommerce.png'
-import CityEcommercePlaceholder from '../assets/images/projects-placeholders/city-ecommerce.png'
 import ParkingSystem from '../assets/images/projects/parking-system.png'
-import ParkingSystemPlaceholder from '../assets/images/projects-placeholders/parking-system.png'
 import RTE from '../assets/images/projects/custom-rte.png'
-import RTEPlaceholder from '../assets/images/projects-placeholders/custom-rte.png'
 import ComponentLib from '../assets/images/projects/component-library.png'
-import ComponentLibPlaceholder from '../assets/images/projects-placeholders/component-library.png'
 import NewsPortal from '../assets/images/projects/news-portal.png'
-import NewsPortalPlaceholder from '../assets/images/projects-placeholders/news-portal.png'
 import CookieValidatorCheck from '../assets/images/projects/cookie-validator-check.png'
+// webp imgs
+import AilaysaWebp from '../assets/images/projects/webp/ailaysa.webp'
+import LangsmartWebp from '../assets/images/projects/webp/langsmart.webp'
+import MonksOfMethodWebp from '../assets/images/projects/webp/monks-of-method.webp'
+import InteriorHarmonyWebp from '../assets/images/projects/webp/interior-harmony.webp'
+import CityEcommerceWebp from '../assets/images/projects/webp/city-ecommerce.webp'
+import ParkingSystemWebp from '../assets/images/projects/webp/parking-system.webp'
+import RTEWebp from '../assets/images/projects/webp/custom-rte.webp'
+import ComponentLibWebp from '../assets/images/projects/webp/component-library.webp'
+import NewsPortalWebp from '../assets/images/projects/webp/news-portal.webp'
+import CookieValidatorCheckWebp from '../assets/images/projects/webp/cookie-validator-check.webp'
+// placeholder imgs
+import AilaysaPlaceholder from '../assets/images/projects-placeholders/ailaysa.png'
+import LangsmartPlaceholder from '../assets/images/projects-placeholders/langsmart.png'
+import MonksOfMethodPlaceholder from '../assets/images/projects-placeholders/monks-of-method.png'
+import InteriorHarmonyPlaceholder from '../assets/images/projects-placeholders/interior-harmony.png'
+import CityEcommercePlaceholder from '../assets/images/projects-placeholders/city-ecommerce.png'
+import ParkingSystemPlaceholder from '../assets/images/projects-placeholders/parking-system.png'
+import RTEPlaceholder from '../assets/images/projects-placeholders/custom-rte.png'
+import ComponentLibPlaceholder from '../assets/images/projects-placeholders/component-library.png'
+import NewsPortalPlaceholder from '../assets/images/projects-placeholders/news-portal.png'
 import { skillsList } from './skillsList'
 
 export const projectsData = [
@@ -33,6 +46,7 @@ export const projectsData = [
         githubLink: "",
         coverImage: Ailaysa,
         placeholderImg: AilaysaPlaceholder,
+        webpImg: AilaysaWebp,
         tag: "SaaS product",
         techStack: skillsList.filter(each => [
             1,2,3,4,5,6,10,11,13,14,15,20,21
@@ -51,6 +65,7 @@ export const projectsData = [
         githubLink: "",
         coverImage: Langsmart,
         placeholderImg: LangsmartPlaceholder,
+        webpImg: LangsmartWebp,
         tag: "",
         techStack: skillsList.filter(each => [
             1,3,5,10,12,13,21
@@ -69,6 +84,7 @@ export const projectsData = [
         githubLink: "",
         coverImage: MonksOfMethod,
         placeholderImg: MonksOfMethodPlaceholder,
+        webpImg: MonksOfMethodWebp,
         tag: "",
         techStack: skillsList.filter(each => [
             17,7,8,9,10,12,13,21
@@ -87,6 +103,7 @@ export const projectsData = [
         githubLink: "https://github.com/sarvesh-iyer/ui-component-library",
         coverImage: ComponentLib,
         placeholderImg: ComponentLibPlaceholder,
+        webpImg: ComponentLibWebp,
         tag: "Component library",
         techStack: skillsList.filter(each => [
             1,4,5,13
@@ -105,6 +122,7 @@ export const projectsData = [
         githubLink: "https://github.com/sarvesh-iyer/electron-policy-manager",
         coverImage: "",
         placeholderImg: "",        
+        webpImg: "",
         tag: "Web Application",
         techStack: skillsList.filter(each => [
             1,2,3,5,10,12,13,16,21
@@ -123,6 +141,7 @@ export const projectsData = [
         githubLink: "https://github.com/sarvesh-iyer/cookie-validator-check",
         coverImage: CookieValidatorCheck,
         placeholderImg: "",        
+        webpImg: CookieValidatorCheckWebp,
         tag: "Npm package",
         techStack: skillsList.filter(each => [
             23,5
@@ -142,6 +161,7 @@ export const projectsData = [
         githubLink: "https://github.com/sarvesh-iyer/interior-designing-website-landing-page",
         coverImage: InteriorHarmony,
         placeholderImg: InteriorHarmonyPlaceholder,
+        webpImg: InteriorHarmonyWebp,
         tag: "Static Website",
         techStack: skillsList.filter(each => [
             1,8,9,7,13,24
@@ -160,6 +180,7 @@ export const projectsData = [
         githubLink: "https://github.com/sarvesh-iyer/custom-rich-text-editor",
         coverImage: RTE,
         placeholderImg: RTEPlaceholder,
+        webpImg: RTEWebp,
         tag: "Wysiwyg editor",
         techStack: skillsList.filter(each => [
             1,57,8,9,13
@@ -178,6 +199,7 @@ export const projectsData = [
         githubLink: "https://github.com/sarvesh-iyer/Firebase-News-Panel-react.js",
         coverImage: NewsPortal,
         placeholderImg: NewsPortalPlaceholder,
+        webpImg: NewsPortalWebp,
         tag: "Web Application",
         techStack: skillsList.filter(each => [
             1,5,7,8,9,12,13,16
@@ -196,6 +218,7 @@ export const projectsData = [
         githubLink: "https://github.com/sarvesh-iyer/City-Ecommerce-Website",
         coverImage: CityEcommerce,
         placeholderImg: CityEcommercePlaceholder,
+        webpImg: CityEcommerceWebp,
         tag: "Static website",
         techStack: skillsList.filter(each => [
             8,9,11,7,13
@@ -214,6 +237,7 @@ export const projectsData = [
         githubLink: "https://github.com/sarvesh-iyer/Smart-Parking-System-IOT",
         coverImage: ParkingSystem,
         placeholderImg: ParkingSystemPlaceholder,
+        webpImg: ParkingSystemWebp,
         tag: "IOT",
         techStack: skillsList.filter(each => [
             22

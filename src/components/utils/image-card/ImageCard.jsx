@@ -1,5 +1,6 @@
 import React from 'react'
-import MyPic from '../../../assets/images/hero/sarvesh.png'
+// import MyPic from '../../../assets/images/hero/sarvesh.png'
+import MyPic from '../../../assets/images/hero/pic2.JPG'
 
 export const ImageCard = () => {
     return (
