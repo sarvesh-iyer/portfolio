@@ -31,16 +31,18 @@ export const Projects = () => {
                     {!project?.name ? (
                         <>
                             <h1>My Works</h1>
-                            <p className='mt-2'>Here are my projects that showcase my passion for front-end development.</p>
+                            <p className='mt-2'>Here are my main projects that that I've done so far.</p>
                         </>
                     ) : (
                         <>
                             <h1>{project?.name}</h1>
-                            <p className='mt-2'>{project.description}</p>
+                            {/* <p className='mt-2'>{project.description}</p> */}
                         </>
                     )}
                 </div>
-                <div className="right-container"></div>
+                <div className="right-container">
+                    <p className='mt-2'>{project?.description}</p>
+                </div>
             </div>
             
             {project === null && projectsData.map(project => (
