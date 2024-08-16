@@ -87,18 +87,6 @@
     to {left: 100%; }
 }
 
-.react-responsive-3d-carousel__carousel {
-    height: 40dvh !important;
-}
-
-.react-responsive-3d-carousel__carousel__item {
-    border-radius: 10px;
-    width: 60dvh !important;
-    height: 40dvh !important;
-}
-.react-responsive-3d-carousel__carousel__item img{
-    object-position: left top;
-}
 
 @media screen and (max-width: 650px) {
     .project-image-container-card {
@@ -112,14 +100,5 @@
     }
     .project-card-container .project-name::before {
         animation: infinite-underline 3s ease-in-out infinite;
-    }
-
-    .react-responsive-3d-carousel__carousel {
-        height: 20dvh !important;
-    }
-    .react-responsive-3d-carousel__carousel__item {
-        border-radius: 10px;
-        width: 40dvh !important;
-        height: 20dvh !important;
     }
 }

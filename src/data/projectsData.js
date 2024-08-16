@@ -60,7 +60,7 @@ export const projectsData = [
         id: 5,
         pageLink: "/works/5",
         name: "Policy Manager",
-        description: "",
+        description: "Policy Manager is a powerful web app designed to streamline insurance policy management. Perfect for users who need an organized way to track policies, it offers robust features for policy oversight and payment tracking.",
         attributes: {
             // "Role": "Front-end(Shopify theme) developer",
             "Technologies": "",
@@ -96,7 +96,7 @@ export const projectsData = [
         id: 6,
         pageLink: "/works/6",
         name: "Cookie Validator Check",
-        description: "",
+        description: "cookie-validator-check is a utility package for validating cookies to ensure they contain specific key-value pairs. It triggers validation when the document becomes visible, allowing for redirection if the condition is met.",
         attributes: {
             // "Role": "Front-end(Shopify theme) developer",
             "Technologies": "",
