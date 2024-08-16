@@ -5,8 +5,16 @@ import MyPic from '../../assets/images/hero/pic1.JPG'
 import MyPicWebp from '../../assets/images/hero/pic1.webp'
 import { socialLinksList } from '../../data/socialLinkData'
 import NorthEastIcon from '@mui/icons-material/NorthEast';
+import { useNavigate } from 'react-router-dom'
 
 export const Hero = () => {
+    
+    const navigate = useNavigate()
+
+    const handleContactBtn = () => {
+        navigate("#contact")
+    } 
+
     return (
         <section className="section-wrapper">
             <div className="section-container hero-container">
@@ -22,6 +30,7 @@ export const Hero = () => {
                     <div className="contact-button-group space-x-4">
                         <ActionButton 
                             icon={<NorthEastIcon />}
+                            onClick={handleContactBtn}
                         >
                             Contact me
                         </ActionButton>

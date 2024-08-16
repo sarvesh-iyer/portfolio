@@ -40,6 +40,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+html{
+	scroll-padding-top: 70px;
+}
 body {
 	line-height: 1;
 }
@@ -204,6 +207,7 @@ fade {
 }
 
 @media screen and (max-width: 650px) {
+	html{ scroll-padding-top: 0; }
 	h2 { font-size: 66px; }
 	h3 { font-size: 26px; }
 	.section-container {
