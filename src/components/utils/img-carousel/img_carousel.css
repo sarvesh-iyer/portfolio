@@ -1,0 +1,48 @@
+.react-responsive-3d-carousel__carousel {
+    height: 60dvh !important;
+}
+.react-responsive-3d-carousel__carousel__item {
+    border-radius: 10px;
+    width: 40dvw !important;
+    height: 60dvh !important;
+}
+.react-responsive-3d-carousel__carousel__item img{
+    object-position: left top;
+}
+
+@media screen and (max-width: 890px) {
+    .react-responsive-3d-carousel__carousel {
+        height: 60dvh !important;
+    }
+    .react-responsive-3d-carousel__carousel__item {
+        width: 60dvw !important;
+        height: 60dvh !important;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .react-responsive-3d-carousel__carousel {
+        height: 40dvh !important;
+    }
+    .react-responsive-3d-carousel__carousel__item {
+        width: 50dvw !important;
+        height: 40dvh !important;
+    }
+    .react-responsive-3d-carousel__carousel__list {
+        width: 65% !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .react-responsive-3d-carousel__carousel {
+        height: 35dvh !important;
+    }
+    .react-responsive-3d-carousel__carousel__item {
+        width: 60dvw !important;
+        height: 35dvh !important;
+    }
+    .react-responsive-3d-carousel__carousel__list {
+        width: 15% !important;
+    }
+
+}

@@ -34,7 +34,7 @@ export const Projects = () => {
                         </>
                     ) : (
                         <>
-                            <h1>{project?.name}</h1>
+                            <h1 className="project-name">{project?.name}</h1>
                         </>
                     )}
                 </div>

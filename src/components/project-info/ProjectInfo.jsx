@@ -8,7 +8,7 @@ export const ProjectInfo = (props) => {
 
     return (
         <>
-            <div className="section-container">
+            <div className="section-container featured-project-container">
                 <div className="left-container">
                     <h2>Why</h2>
                 </div>
@@ -16,7 +16,7 @@ export const ProjectInfo = (props) => {
                     <p>I am always looking to add more skills.Morbi egestas neque eu blandit fermentum. Nulla ac lobortis ligula. Pellentesque ac ex at purus faucibus tristique ut et dolor. </p>
                 </div>
             </div>
-            <div className="section-container flex-col">
+            <div className="section-container featured-project-container flex-col">
                 <div className="left-container">
                     <h2>Screenshots</h2>
                 </div>

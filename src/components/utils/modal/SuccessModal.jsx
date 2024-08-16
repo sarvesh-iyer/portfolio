@@ -30,11 +30,11 @@ export const SuccessModal = (props) => {
   
     return (
         <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-        className='success-modal'
+            open={open}
+            onClose={handleClose}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            className='success-modal'
         >
             <Zoom in={open} timeout={400}>
                 <Box className="success-modal-container" >
