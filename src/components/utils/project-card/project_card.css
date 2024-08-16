@@ -97,4 +97,7 @@
     .project-card-container .action-link {
         margin-top: 35px;
     }
+    .project-card-container .project-name::before {
+        animation: infinite-underline 3s ease-in-out infinite;
+    }
 }
