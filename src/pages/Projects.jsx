@@ -23,7 +23,6 @@ export const Projects = () => {
         }
     }, [id])
 
-    
     return (
         <section className="section-wrapper">
             <div className="section-container featured-project-container">
@@ -36,7 +35,6 @@ export const Projects = () => {
                     ) : (
                         <>
                             <h1>{project?.name}</h1>
-                            {/* <p className='mt-2'>{project.description}</p> */}
                         </>
                     )}
                 </div>
