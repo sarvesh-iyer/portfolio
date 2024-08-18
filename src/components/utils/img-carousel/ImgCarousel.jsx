@@ -21,8 +21,9 @@ export const ImgCarousel = ({imageList}) => {
                 isArrowsShadow={false}
                 arrowsHoveredColor="var(--secondary-hover-dark)"
                 indicatorsInactiveColor="var(--secondary-hover-dark)"
+                pauseOnHover={false}
             >
-                {imageList.map(img => (
+                {imageList?.map(img => (
                     <picture key={img.id}>
                         <source srcSet={img.webp} type="image/webp" />
                         <img 

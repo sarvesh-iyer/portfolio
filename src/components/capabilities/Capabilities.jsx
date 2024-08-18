@@ -39,7 +39,7 @@ export const Capabilities = () => {
                     <AnimatedLink 
                         isbutton={true} 
                         onClick={toggleShowMore}
-                        customClass="mt-3 ml-2"
+                        customClass="mt-4 ml-2"
                     >
                         {!showMore ? "Show more" : "Show less"}
                     </AnimatedLink>
