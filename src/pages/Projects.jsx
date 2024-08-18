@@ -3,6 +3,9 @@ import { projectsData } from '../data/projectsData'
 import { ProjectCard } from '../components/utils/project-card/ProjectCard'
 import { useNavigate, useParams } from 'react-router-dom'
 import { ProjectInfo } from '../components/project-info/ProjectInfo'
+import { IconButton } from '@mui/material'
+import { ArrowBack, GitHub, NorthEast } from '@mui/icons-material'
+import { ActionButton } from '../components/utils/button/ActionButton'
 
 export const Projects = () => {
 
@@ -23,6 +26,10 @@ export const Projects = () => {
         }
     }, [id])
 
+    const handleActionBtnClick = (link) => {
+        window.open(link)
+    }
+
     return (
         <section className="section-wrapper">
             <div className="section-container featured-project-container">
@@ -39,7 +46,25 @@ export const Projects = () => {
                     )}
                 </div>
                 <div className="right-container">
-                    <p className='mt-2'>{project?.description}</p>
+                    <p>{project?.description}</p>
+                    {project !== null && (
+                        <div className="cta-links flex space-x-6 mt-6">
+                            <ActionButton
+                                icon={<NorthEast />}
+                                onClick={() => handleActionBtnClick(project.siteLink)}
+                            >
+                                Live site
+                            </ActionButton>
+                            {project?.githubLink && (
+                                <ActionButton
+                                    icon={<GitHub />}
+                                    onClick={() => handleActionBtnClick(project.githubLink)}
+                                >
+                                    Github
+                                </ActionButton>
+                            )}
+                        </div>
+                    )}
                 </div>
             </div>
             

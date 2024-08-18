@@ -49,4 +49,10 @@ export const Helper = {
         })
         return newArr
     },
+
+    filterAndReorderArray: (list, orderArray) => {
+        return list.filter(each => orderArray.includes(each.id))
+                .sort((a, b) => orderArray.indexOf(a.id) - orderArray.indexOf(b.id))
+
+    }
 }

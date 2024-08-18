@@ -1,5 +1,6 @@
 import { skillsList } from './skillsList'
 import { projectsImgData } from './projectsImgData'
+import { Helper } from '../helpers/Helper'
 
 export const projectsData = [
     {
@@ -14,9 +15,7 @@ export const projectsData = [
         siteLink: "https://ailaysa.com/",
         githubLink: "",
         tag: "SaaS product",
-        techStack: skillsList.filter(each => [
-            1,2,3,4,5,6,10,11,13,14,15,20,21
-        ].includes(each.id)),
+        techStack: Helper.filterAndReorderArray(skillsList, [1,2,3,4,5,6,10,11,13,14,15,20,21]),
         images: projectsImgData?.find(each => each.id === 1)
     },
     {
@@ -31,9 +30,7 @@ export const projectsData = [
         siteLink: "https://langsmart.com/",
         githubLink: "",
         tag: "",
-        techStack: skillsList.filter(each => [
-            1,3,5,10,12,13,21
-        ].includes(each.id)),
+        techStack: Helper.filterAndReorderArray(skillsList, [1,3,5,10,12,13,21]),
         images: projectsImgData?.find(each => each.id === 2)
 
         
@@ -50,9 +47,7 @@ export const projectsData = [
         siteLink: "https://monksofmethod.com/",
         githubLink: "",
         tag: "",
-        techStack: skillsList.filter(each => [
-            17,7,8,9,10,12,13,21
-        ].includes(each.id)),
+        techStack: Helper.filterAndReorderArray(skillsList, [17,7,8,9,10,12,13,21]), 
         images: projectsImgData?.find(each => each.id === 3)
 
     },
@@ -68,9 +63,7 @@ export const projectsData = [
         siteLink: "https://polymanager.netlify.app/",
         githubLink: "https://github.com/sarvesh-iyer/electron-policy-manager",
         tag: "Web Application",
-        techStack: skillsList.filter(each => [
-            1,2,3,5,10,12,13,16,21
-        ].includes(each.id)),
+        techStack: Helper.filterAndReorderArray(skillsList, [1,2,3,5,10,12,13,16,21]), 
         images: projectsImgData?.find(each => each.id === 5)
 
     },
@@ -78,7 +71,7 @@ export const projectsData = [
         id: 7,
         pageLink: "/works/7",
         name: "UI Component Library",
-        description: "",
+        description: "UI Component Library offers highly customizable and controlled React components, designed for flexibility and ease of use in web applications. Built with Storybook and bundled with Rollup, it integrates seamlessly into your projects.",
         attributes: {
             // "Role": "Front-end(Shopify theme) developer",
             "Technologies": "",
@@ -86,9 +79,7 @@ export const projectsData = [
         siteLink: "https://ui-component-storybook.netlify.app/",
         githubLink: "https://github.com/sarvesh-iyer/ui-component-library",
         tag: "Component library",
-        techStack: skillsList.filter(each => [
-            1,4,5,13
-        ].includes(each.id)),
+        techStack: Helper.filterAndReorderArray(skillsList, [1,4,5,13]),
         images: projectsImgData?.find(each => each.id === 7)
 
     },
@@ -104,9 +95,7 @@ export const projectsData = [
         siteLink: "https://www.npmjs.com/package/cookie-validator-check",
         githubLink: "https://github.com/sarvesh-iyer/cookie-validator-check",
         tag: "Npm package",
-        techStack: skillsList.filter(each => [
-            23,5
-        ].includes(each.id)),
+        techStack: Helper.filterAndReorderArray(skillsList, [23,5]),
         images: projectsImgData?.find(each => each.id === 6)
 
     },
@@ -115,7 +104,7 @@ export const projectsData = [
         id: 8,
         pageLink: "/works/8",
         name: "Interior Harmony",
-        description: "",
+        description: "Interior Harmony is a React-based landing page for the furniture industry, featuring image carousels, an infinite image looper, and a responsive contact form with EmailJS integration. Optimized for all devices, it ensures a seamless user experience.",
         attributes: {
             // "Role": "Front-end(Shopify theme) developer",
             "Technologies": "",
@@ -123,9 +112,7 @@ export const projectsData = [
         siteLink: "https://my-interior-website.netlify.app/",
         githubLink: "https://github.com/sarvesh-iyer/interior-designing-website-landing-page",
         tag: "Static Website",
-        techStack: skillsList.filter(each => [
-            1,8,9,7,13,24
-        ].includes(each.id)),
+        techStack: Helper.filterAndReorderArray(skillsList, [1,8,9,7,13,24]),
         images: projectsImgData?.find(each => each.id === 8)
 
     },
@@ -133,7 +120,7 @@ export const projectsData = [
         id: 9,
         pageLink: "/works/9",
         name: "Custom Rich Text Editor",
-        description: "",
+        description: "This custom WYSIWYG editor is built on top of Quill.js to explore and customize WYSIWYG editors, offering versatile features and a user-friendly experience for text formatting and content management.",
         attributes: {
             // "Role": "Front-end(Shopify theme) developer",
             "Technologies": "",
@@ -141,9 +128,7 @@ export const projectsData = [
         siteLink: "https://custom-rte.netlify.app/",
         githubLink: "https://github.com/sarvesh-iyer/custom-rich-text-editor",
         tag: "Wysiwyg editor",
-        techStack: skillsList.filter(each => [
-            1,57,8,9,13
-        ].includes(each.id)),
+        techStack: Helper.filterAndReorderArray(skillsList, [1,57,8,9,13]),
         images: projectsImgData?.find(each => each.id === 9)
 
     },
@@ -151,7 +136,7 @@ export const projectsData = [
         id: 10,
         pageLink: "/works/10",
         name: "Firebase News Panel",
-        description: "",
+        description: "Firebase News Portal is a dynamic web app built with React and Google Firebase. It offers full CRUD functionality, allowing users to efficiently manage news content.",
         attributes: {
             // "Role": "Front-end(Shopify theme) developer",
             "Technologies": "",
@@ -159,9 +144,7 @@ export const projectsData = [
         siteLink: "https://firebase-news-panel.netlify.app/",
         githubLink: "https://github.com/sarvesh-iyer/Firebase-News-Panel-react.js",
         tag: "Web Application",
-        techStack: skillsList.filter(each => [
-            1,5,7,8,9,12,13,16
-        ].includes(each.id)),
+        techStack: Helper.filterAndReorderArray(skillsList, [1,5,7,8,9,12,13,16]),
         images: projectsImgData?.find(each => each.id === 10)
 
     },
@@ -169,7 +152,7 @@ export const projectsData = [
         id: 11,
         pageLink: "/works/11",
         name: "City E-commerce",
-        description: "",
+        description: "City E-commerce is a static website developed as part of my initial learning of frontend development, including HTML, CSS, and responsive design, during my internship. The project emphasizes high performance, and optimizing web vitals.",
         attributes: {
             // "Role": "Front-end(Shopify theme) developer",
             "Technologies": "",
@@ -177,9 +160,7 @@ export const projectsData = [
         siteLink: "https://city-ecommerce.netlify.app/",
         githubLink: "https://github.com/sarvesh-iyer/City-Ecommerce-Website",
         tag: "Static website",
-        techStack: skillsList.filter(each => [
-            8,9,11,7,13
-        ].includes(each.id)),
+        techStack: Helper.filterAndReorderArray(skillsList, [8,9,11,7,13]),
         images: projectsImgData?.find(each => each.id === 11)
 
     },
@@ -187,17 +168,15 @@ export const projectsData = [
         id: 12,
         pageLink: "/works/12",
         name: "Smart Parking System",
-        description: "",
+        description: "This is an IoT project build using a Raspberry Pi to manage parking spaces. It displays available slots in real-time and automatically opens the gate when spots are free, streamlining parking and enhancing convenience.",
         attributes: {
             // "Role": "Front-end(Shopify theme) developer",
             "Technologies": "",
         },
         siteLink: "",
         githubLink: "https://github.com/sarvesh-iyer/Smart-Parking-System-IOT",
-        tag: "IOT",
-        techStack: skillsList.filter(each => [
-            22
-        ].includes(each.id)),
+        tag: "IOT - College",
+        techStack: Helper.filterAndReorderArray(skillsList, [22]),
         images: projectsImgData?.find(each => each.id === 12)
 
     },

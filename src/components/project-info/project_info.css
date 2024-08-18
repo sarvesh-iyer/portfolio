@@ -1,0 +1,47 @@
+.featured-project-container h1 {
+    font-size: 96px;   
+}
+.featured-project-container .left-container {
+    width: 50%;   
+}
+.featured-project-container .right-container {
+    width: 50%;   
+}
+@media screen and (max-width: 950px) {
+    .featured-project-container h1 {
+        font-size: 86px;   
+    }
+    .tech-stack-container .skill-icon {      
+        width: 70px;
+    }
+}
+@media screen and (max-width: 770px) {
+    .tech-stack-container .skill-icon {      
+        width: 65px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .featured-project-container .left-container {
+        width: 100%;   
+    }
+    .featured-project-container .right-container {
+        width: 100%;   
+    }
+    .featured-project-container h1 {
+        font-size: 76px;   
+    }
+    .tech-stack-container .skill-icon {      
+        width: 60px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .featured-project-container h1 {
+        font-size: 70px;   
+    }
+    .featured-project-container h2 {
+        font-size: 60px;   
+    }
+    .featured-project-container h2 {
+        font-size: 60px;   
+    }
+}
