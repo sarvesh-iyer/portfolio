@@ -2,6 +2,7 @@ import LinkedInIcon from '../assets/images/icons/linkedin.svg'
 import GithubIcon from '../assets/images/icons/github.svg'
 import MailIcon from '../assets/images/icons/mail.svg'
 import WhatsappIcon from '../assets/images/icons/whatsapp.svg'
+import PhoneIcon from '../assets/images/icons/phone.svg'
 
 export const socialLinksList = [
     {
@@ -26,6 +27,12 @@ export const socialLinksList = [
         id: 4,
         name: 'whatsapp',
         icon: WhatsappIcon,
-        link: "https://api.whatsapp.com/send?phone=7358557812&text=Hi"
+        link: "https://api.whatsapp.com/send?phone=7358557812&text=Hi Sarvesh"
+    },
+    {
+        id: 5,
+        name: 'phone',
+        icon: PhoneIcon,
+        link: "tel:+918319372063"
     },
 ]

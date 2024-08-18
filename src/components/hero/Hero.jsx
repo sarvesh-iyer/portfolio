@@ -1,8 +1,8 @@
 import { ActionButton } from '../utils/button/ActionButton'
 import './hero.css'
 // import MyPic from '../../assets/images/hero/mypic.png'
-import MyPic from '../../assets/images/hero/pic1.JPG'
-import MyPicWebp from '../../assets/images/hero/pic1.webp'
+import MyPic from '../../assets/images/hero/pic1-compress.jpg'
+import MyPicWebp from '../../assets/images/hero/pic1-compress.webp'
 import { socialLinksList } from '../../data/socialLinkData'
 import NorthEastIcon from '@mui/icons-material/NorthEast';
 import { useNavigate } from 'react-router-dom'
