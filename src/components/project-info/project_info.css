@@ -1,3 +1,6 @@
+.featured-project-container {
+    gap: 35px !important;
+}
 .featured-project-container h1 {
     font-size: 96px;   
 }

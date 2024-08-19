@@ -29,7 +29,7 @@ export const projectsData = [
         },
         siteLink: "https://langsmart.com/",
         githubLink: "",
-        tag: "",
+        tag: "Service website",
         techStack: Helper.filterAndReorderArray(skillsList, [1,3,5,10,12,13,21]),
         images: projectsImgData?.find(each => each.id === 2)
 
@@ -46,7 +46,7 @@ export const projectsData = [
         },
         siteLink: "https://monksofmethod.com/",
         githubLink: "",
-        tag: "",
+        tag: "E-commerce",
         techStack: Helper.filterAndReorderArray(skillsList, [17,7,8,9,10,12,13,21]), 
         images: projectsImgData?.find(each => each.id === 3)
 
@@ -176,8 +176,34 @@ export const projectsData = [
         siteLink: "",
         githubLink: "https://github.com/sarvesh-iyer/Smart-Parking-System-IOT",
         tag: "IOT - College",
-        techStack: Helper.filterAndReorderArray(skillsList, [22]),
-        images: projectsImgData?.find(each => each.id === 12)
-
+        techStack: Helper.filterAndReorderArray(skillsList, [22, 25]),
+        images: projectsImgData?.find(each => each.id === 12),
+        features: [
+            {
+                id: 1,
+                title: "Real-Time Slot Display",
+                desc: "Continuously monitors and displays available parking slots in real-time for efficient parking management."
+            },
+            {
+                id: 2,
+                title: "IoT Integration",
+                desc: "Utilizes Raspberry Pi for reliable and responsive control, connecting sensors and gate mechanisms for seamless operation."
+            },
+            {
+                id: 3,
+                title: "Automated Gate Control",
+                desc: "Automatically opens the gate when a parking spot is available, ensuring smooth and hassle-free entry."
+            },
+            {
+                id: 4,
+                title: "Enhanced User Experience",
+                desc: "Streamlines the parking process by reducing manual intervention and offering a convenient, automated solution."
+            },
+            {
+                id: 5,
+                title: "Scalability",
+                desc: "The system can be easily scaled to manage multiple parking lots or integrated with additional features like payment processing or mobile app control."
+            },
+        ]
     },
 ]

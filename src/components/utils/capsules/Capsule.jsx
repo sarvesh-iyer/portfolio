@@ -5,13 +5,14 @@ export const Capsule = (props) => {
     let {
         children,
         icon,
-        link
+        link,
+        customclass
     } = props
     return (
         <a 
             href={link}
             target='_blank'
-            className="capsule flex items-center transition-effect"
+            className={"capsule flex items-center transition-effect " + customclass}
         >
             {children}
             {icon && (

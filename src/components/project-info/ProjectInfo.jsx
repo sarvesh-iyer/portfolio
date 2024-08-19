@@ -43,7 +43,13 @@ export const ProjectInfo = (props) => {
                     <h2>Features</h2>
                 </div>
                 <div className="right-container w-full">
-                    
+                    <ul className="list-disc">
+                        {project?.features?.map(feature => (
+                            <li key={feature.id} className="pt-5 tracking-wide">
+                                <span className="company-name inline">{feature.title}:</span> {feature.desc}
+                            </li>
+                        ))}
+                    </ul>
                 </div>
             </div>
 
