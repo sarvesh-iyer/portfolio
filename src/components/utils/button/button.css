@@ -40,7 +40,15 @@
     color: var(--primary-white);
 }
 
-@media screen and (max-width: 650px) {
+
+@media screen and (max-width: 774px) {
+    .action-btn {
+        padding: 12px 16px 12px 20px;
+    }
+}
+
+/* targets devices that can't hover */
+@media (hover: none) {
     .action-btn .animated-arrow{
         scale: 1;
     }
@@ -49,10 +57,8 @@
     }
 }
 
-@media screen and (max-width: 774px) {
-    .action-btn {
-        padding: 12px 16px 12px 20px;
-    }
+@media screen and (max-width: 650px) {
+    
 }
 
 @media screen and (max-width: 450px) {

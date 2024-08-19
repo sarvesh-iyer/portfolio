@@ -13,18 +13,7 @@ export const ProjectInfo = (props) => {
     } 
 
     return (
-        <>
-            <div className="section-container featured-project-container">
-                <div className="left-container">
-                    <h2>Why</h2>
-                </div>
-                <div className="right-container">
-                    <p>I am always looking to add more skills.Morbi egestas neque eu blandit fermentum. Nulla ac lobortis ligula. Pellentesque ac ex at purus faucibus tristique ut et dolor. </p>
-                </div>
-            </div>
-            
-            <Divider />
-            
+        <>            
             <div className="section-container featured-project-container flex-col">
                 <div className="left-container">
                     <h2>Screenshots</h2>
@@ -33,6 +22,17 @@ export const ProjectInfo = (props) => {
                     <ImgCarousel 
                         imageList={project.images.projectImg}
                     />
+                </div>
+            </div>
+
+            <Divider />
+
+            <div className="section-container featured-project-container">
+                <div className="left-container">
+                    <h2>Why</h2>
+                </div>
+                <div className="right-container">
+                    <p>I am always looking to add more skills.Morbi egestas neque eu blandit fermentum. Nulla ac lobortis ligula. Pellentesque ac ex at purus faucibus tristique ut et dolor. </p>
                 </div>
             </div>
 
