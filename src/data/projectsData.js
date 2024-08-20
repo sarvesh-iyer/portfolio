@@ -151,6 +151,13 @@ export const projectsData = [
                 title: "Peer Dependencies",
                 desc: "The library leverages Material UI (MUI) and React Select as peer dependencies, ensuring compatibility with existing UI frameworks while offering advanced customization options."
             },
+        ],
+        dynamicSection: [
+            {
+                id: 1,
+                sectionTitle: "Why this 🤔",
+                sectionDesc: "I developed the UI component library to delve into <span class='highlighted-text'>library development</span> and to gain hands-on experience with <span class='highlighted-text'>Storybook</span>. The primary goal was to create a set of independent, customizable components that can be <span class='highlighted-text'>reused</span> across <span class='highlighted-text'>multiple projects</span>, rather than duplicating code. 👉🏻👈🏻 <br /><br />Building these components within a <span class='highlighted-text'>standalone</span> environment facilitates better <span class='highlighted-text'>development</span> and <span class='highlighted-text'>testing</span>, which is why I chose <span class='highlighted-text'>Storybook</span>. This approach ensures that components are not only <span class='highlighted-text'>reusable</span> but also easily maintainable and adaptable for <span class='highlighted-text'>future projects</span>. 🚀"
+            },
         ]
 
     },
@@ -194,8 +201,14 @@ export const projectsData = [
                 title: "Simple Integration",
                 desc: "The package is easy to integrate into existing projects, requiring minimal setup while providing significant benefits in terms of cookie management."
             },
+        ],
+        dynamicSection: [
+            {
+                id: 1,
+                sectionTitle: "Why this 🤔",
+                sectionDesc: `I developed the "cookie-validator-check" utility package to resolve an issue that I encountered during <span class='highlighted-text'>site authentication</span>. Specifically, when logging in on one tab of a browser, the user was <span class='highlighted-text'>not automatically</span> logged in on other open tabs, as the cookies were not being <span class='highlighted-text'>validated</span> across tabs. To address this, I created a utility that validates cookies whenever the <span class='highlighted-text'>document visibility</span> changes, ensuring that users remain logged in consistently across <span class='highlighted-text'>all tabs</span>. By packaging this functionality as a utility and <span class='highlighted-text'>publishing</span> it to the <span class='highlighted-text'>npm</span> registry, I aimed to provide a <span class='highlighted-text'>reusable</span> solution that can be <span class='highlighted-text'>integrated</span> into various projects, enhancing user <span class='highlighted-text'>experience</span> and <span class='highlighted-text'>authentication reliability</span>.`
+            },
         ]
-
     },
     
     {
