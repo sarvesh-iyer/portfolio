@@ -13,7 +13,8 @@ export const ProjectInfo = (props) => {
     } 
 
     return (
-        <>            
+        <>          
+            {/* Screenshots */}
             <div className="section-container featured-project-container flex-col">
                 <div className="left-container">
                     <h2>Screenshots</h2>
@@ -27,52 +28,63 @@ export const ProjectInfo = (props) => {
 
             <Divider />
 
-            <div className="section-container featured-project-container">
-                <div className="left-container">
-                    <h2>Why</h2>
-                </div>
-                <div className="right-container">
-                    <p>I am always looking to add more skills.Morbi egestas neque eu blandit fermentum. Nulla ac lobortis ligula. Pellentesque ac ex at purus faucibus tristique ut et dolor. </p>
-                </div>
-            </div>
-
-            <Divider />
+            {project?.dynamicSection && (
+                project?.dynamicSection.map(each => (
+                    <>
+                        <div key={each.id} className="section-container featured-project-container">
+                            <div className="left-container">
+                                <h2>{each.sectionTitle}</h2>
+                            </div>
+                            <div className="right-container">
+                                <p dangerouslySetInnerHTML={{__html: each.sectionDesc}}></p>
+                            </div>
+                        </div>
+                        <Divider />
+                    </>
+                ))
+            )}
             
-            <div className="section-container featured-project-container flex-col">
-                <div className="left-container">
-                    <h2>Features</h2>
-                </div>
-                <div className="right-container w-full">
-                    <ul className="list-disc">
-                        {project?.features?.map(feature => (
-                            <li key={feature.id} className="pt-5 tracking-wide">
-                                <span className="company-name inline">{feature.title}:</span> {feature.desc}
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            </div>
+            {/* Key features */}
+            {project?.features && (
+                <>
+                    <div className="section-container featured-project-container flex-col">
+                        <div className="left-container">
+                            <h2>Key Features</h2>
+                        </div>
+                        <div className="right-container w-full">
+                            <ul className="flex gap-5 flex-wrap justify-center">
+                                {project?.features?.map(feature => (
+                                    <li key={feature.id} className="feature-items pt-5 tracking-wide">
+                                        <span className="company-name block">{feature.title}</span> 
+                                        <span>{feature.desc}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                    <Divider />
+                </>
+            )}
 
-            <Divider />
-
+            {/* Technology stack */}
             <div className="section-container featured-project-container flex-col tech-stack-container">
                 <div className="left-container w-full">
                     <h2>Technology stack</h2>
                 </div>
                 <div className="right-container w-full">
-                    <div className='flex gap-5 max-[650px]:gap-3 justify-center items-center flex-wrap mt-5'>
+                    <div className='flex gap-4 max-[650px]:gap-3 justify-center items-center flex-wrap mt-5'>
                         {project?.techStack?.map(each => (
                             <a 
                                 key={each.id}
                                 href={each.link} 
                                 target='_blank'
-                                className="items-center flex flex-col justify-center p-3 transition hover:bg-[var(--secondary-hover-dark)] rounded-lg" 
+                                className="skill-wrapper items-center flex flex-col justify-center p-2 transition-effect hover:bg-[var(--secondary-hover-dark)] rounded-lg" 
                             >
                                 <img 
                                     className="skill-icon" 
                                     src={each.img} 
                                     alt={each.name}
-                                    width={80}
+                                    width={70}
                                 />
                                 <span className='mt-3'>{each.name}</span>
                             </a>
