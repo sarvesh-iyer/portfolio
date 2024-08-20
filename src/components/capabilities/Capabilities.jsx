@@ -24,7 +24,7 @@ export const Capabilities = () => {
                     </p>
                     <Collapse in={showMore} collapsedSize={285}>
                         <div className="flex flex-wrap gap-4 mt-8">
-                                {skillsList.map(skill => (
+                                {skillsList.filter(each => ![25].includes(each.id)).map(skill => (
                                     <Capsule 
                                         key={skill.id} 
                                         icon={skill.img}

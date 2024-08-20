@@ -22,6 +22,7 @@ import FirebaseIcon from '../assets/images/skills/firebase.svg'
 import PythonIcon from '../assets/images/skills/python.svg'
 import TypescriptIcon from '../assets/images/skills/typescript.svg'
 import EmailJSIcon from '../assets/images/skills/emailjs.svg'
+import RasberryPiIcon from '../assets/images/skills/raspberry-pi.svg'
 
 export const skillsList = [
     {
@@ -167,5 +168,11 @@ export const skillsList = [
         name: 'Email JS',
         img: EmailJSIcon,
         link: "https://www.emailjs.com/"
+    },
+    {
+        id: 25,
+        name: 'Rasberry Pi',
+        img: RasberryPiIcon,
+        link: "https://www.raspberrypi.com/"
     },
 ]

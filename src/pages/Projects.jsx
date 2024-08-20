@@ -6,6 +6,7 @@ import { ProjectInfo } from '../components/project-info/ProjectInfo'
 import { IconButton } from '@mui/material'
 import { ArrowBack, GitHub, NorthEast } from '@mui/icons-material'
 import { ActionButton } from '../components/utils/button/ActionButton'
+import { Capsule } from '../components/utils/capsules/Capsule'
 
 export const Projects = () => {
 
@@ -42,6 +43,9 @@ export const Projects = () => {
                     ) : (
                         <>
                             <h1 className="project-name">{project?.name}</h1>
+                            <Capsule customclass="w-fit px-4 mt-3" >
+                                {project.tag}
+                            </Capsule>
                         </>
                     )}
                 </div>

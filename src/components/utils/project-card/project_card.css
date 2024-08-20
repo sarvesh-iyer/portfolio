@@ -87,6 +87,11 @@
     to {left: 100%; }
 }
 
+@media (hover: none) {
+    .project-card-container .project-name::before {
+        animation: infinite-underline 3s ease-in-out infinite;
+    }
+}
 
 @media screen and (max-width: 650px) {
     .project-image-container-card {
@@ -98,7 +103,5 @@
     .project-card-container .action-link {
         margin-top: 35px;
     }
-    .project-card-container .project-name::before {
-        animation: infinite-underline 3s ease-in-out infinite;
-    }
 }
+
