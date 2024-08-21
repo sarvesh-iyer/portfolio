@@ -9,11 +9,6 @@ export const ImageModal = ({ image, open, setOpen }) => {
         setOpen(false);
     };
 
-    useEffect(() => {
-        console.log(image)
-    }, [image])
-    
-
     return (
         <Modal
             open={open}

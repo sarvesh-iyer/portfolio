@@ -206,7 +206,7 @@ export const projectsData = [
             {
                 id: 1,
                 sectionTitle: "Why this 🤔",
-                sectionDesc: `I developed the "cookie-validator-check" utility package to resolve an issue that I encountered during <span class='highlighted-text'>site authentication</span>. Specifically, when logging in on one tab of a browser, the user was <span class='highlighted-text'>not automatically</span> logged in on other open tabs, as the cookies were not being <span class='highlighted-text'>validated</span> across tabs. To address this, I created a utility that validates cookies whenever the <span class='highlighted-text'>document visibility</span> changes, ensuring that users remain logged in consistently across <span class='highlighted-text'>all tabs</span>. By packaging this functionality as a utility and <span class='highlighted-text'>publishing</span> it to the <span class='highlighted-text'>npm</span> registry, I aimed to provide a <span class='highlighted-text'>reusable</span> solution that can be <span class='highlighted-text'>integrated</span> into various projects, enhancing user <span class='highlighted-text'>experience</span> and <span class='highlighted-text'>authentication reliability</span>.`
+                sectionDesc: `I developed the "cookie-validator-check" utility package to resolve an issue that I encountered during <span class='highlighted-text'>site authentication</span>. Specifically, when logging in on one tab of a browser, the user was <span class='highlighted-text'>not automatically</span> logged in on other open tabs, as the cookies were not being <span class='highlighted-text'>validated</span> across tabs. <br /><br />To address this, I created a utility that validates cookies whenever the <span class='highlighted-text'>document visibility</span> changes, ensuring that users remain logged in consistently across <span class='highlighted-text'>all tabs</span>. <br />By packaging this functionality as a utility and <span class='highlighted-text'>publishing</span> it to the <span class='highlighted-text'>npm</span> registry, I aimed to provide a <span class='highlighted-text'>reusable</span> solution that can be <span class='highlighted-text'>integrated</span> into various projects, enhancing user <span class='highlighted-text'>experience</span> and <span class='highlighted-text'>authentication reliability</span>.`
             },
         ]
     },
@@ -251,8 +251,14 @@ export const projectsData = [
                 title: "Modern Technology Stack",
                 desc: "Developed using React and Vite, the project leverages the latest web technologies to ensure fast load times and a responsive interface. This project served as a platform to experiment with and apply advanced CSS techniques in a modern development environment."
             },
+        ],
+        dynamicSection: [
+            {
+                id: 1,
+                sectionTitle: "Why this 🤔",
+                sectionDesc: `This landing page was developed as a project to <span class='highlighted-text'>refresh</span> my <span class='highlighted-text'>CSS</span> knowledge and to experiment with <span class='highlighted-text'>EmailJS</span> integration for handling form submissions. Before this, my work was heavily concentrated on React's <span class='highlighted-text'>data management</span>, <span class='highlighted-text'>Rest API</span> integrations, and other <span class='highlighted-text'>data-centric</span> tasks in front-end development. <br /><br />Building this landing page allowed me to <span class='highlighted-text'>re-engage</span> with the design and styling aspects of <span class='highlighted-text'>web development</span>, and to experiment with implementing a <span class='highlighted-text'>new tool</span> in the process.`
+            },
         ]
-
     },
     {
         id: 9,
@@ -294,8 +300,14 @@ export const projectsData = [
                 title: "Custom Toolbar",
                 desc: "The custom toolbar offers extensive options beyond basic text editing, including the ability to choose from a variety of Google fonts for flexible text presentation, adjust font sizes for precise control, and incorporate basic tables, providing users with a versatile set of tools."
             },
+        ],
+        dynamicSection: [
+            {
+                id: 1,
+                sectionTitle: "Why this 🤔",
+                sectionDesc: `I developed this project as a proof of concept <span class='highlighted-text'>(POC)</span> to explore the <span class='highlighted-text'>customization potential</span> of existing editors. During this process, I evaluated several options, including <span class='highlighted-text'>paid</span> and <span class='highlighted-text'>open-source</span> editors like CKEditor, TinyMCE, Editor.js, Draft.js, and <span class='highlighted-text'>Quill.js</span>. <br />I ultimately chose Quill.js due to its <span class='highlighted-text'>robustness</span>, <span class='highlighted-text'>extensive API</span>, strong <span class='highlighted-text'>customization capabilities</span>, and the fact that it is <span class='highlighted-text'>open-source</span>. <br /><br />This project was also one of my <span class='highlighted-text'>early experiences</span> with React, allowing me to develop a flexible and <span class='highlighted-text'>tailored text editor</span> while <span class='highlighted-text'>honing</span> my skills in front-end development.`
+            },
         ]
-
     },
     {
         id: 10,
