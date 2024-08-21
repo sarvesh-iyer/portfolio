@@ -61,7 +61,7 @@ nav ul li a{
         backdrop-filter: blur(6px) saturate(180%);
         -webkit-backdrop-filter: blur(6px) saturate(180%);
         background-color: rgba(10, 10, 10, 0.74);
-        border: 1px solid rgba(255, 255, 255, 0.125);
+        border: 1px solid rgb(243, 243, 243);
     }
     nav .name-logo {
         display: none;
