@@ -3,6 +3,7 @@ import { AnimatedLink } from '../utils/animated-link/AnimatedLink'
 import { ActionButton } from '../utils/button/ActionButton'
 import { socialLinksList } from '../../data/socialLinkData'
 import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
+import { East } from '@mui/icons-material';
 
 export const AboutMe = (props) => { 
     let {
@@ -41,6 +42,7 @@ export const AboutMe = (props) => {
                         <AnimatedLink 
                             link="/about"
                             samePage={true}
+                            icon={<East />}
                             customClass="mt-12"
                         >
                             More about me

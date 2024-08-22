@@ -82,6 +82,10 @@
     margin-top: 48px;
 }
 
+.more-projects-link {
+    margin-left: auto;
+}
+
 @keyframes infinite-underline {
     from {left: -100%;}
     to {left: 100%; }
@@ -102,6 +106,10 @@
     }
     .project-card-container .action-link {
         margin-top: 35px;
+    }
+
+    .more-projects-link {
+        margin-left: 0;
     }
 }
 

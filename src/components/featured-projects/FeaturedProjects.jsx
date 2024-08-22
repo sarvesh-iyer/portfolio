@@ -1,6 +1,8 @@
 import React from 'react'
 import { ProjectCard } from '../utils/project-card/ProjectCard'
 import { projectsData } from '../../data/projectsData'
+import { AnimatedLink } from '../utils/animated-link/AnimatedLink'
+import { East } from '@mui/icons-material'
 
 export const FeaturedProjects = () => {
     return (
@@ -18,6 +20,16 @@ export const FeaturedProjects = () => {
                     data={project} 
                 />
             ))}
+            <div className="section-container flex-row">
+                <AnimatedLink
+                    link="/works"
+                    icon={<East />}
+                    samePage={true}
+                    customClass="more-projects-link -top-10"
+                >
+                    More projects
+                </AnimatedLink>
+            </div>
         </section>
     )
 }
