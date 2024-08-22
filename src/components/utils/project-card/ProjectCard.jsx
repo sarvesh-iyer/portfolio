@@ -42,7 +42,7 @@ export const ProjectCard = (props) => {
                 </div>
             </div>
             <div className="right-container">
-                <h3 className="project-name relative inline-block pb-2 overflow-hidden"><Link  to={data.pageLink}>{data.name}</Link></h3>
+                <h3 className="project-name relative inline-block pb-2 overflow-hidden"><Link to={data.pageLink}>{data.name}</Link></h3>
                 <p className="mt-3 mb-8">{data.description}</p>
                 <div className="project-info-wrapper space-y-4">
                     <p className="title">Project Info</p>
