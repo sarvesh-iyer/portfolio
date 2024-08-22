@@ -5,10 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && npm run copy-sitemap",
+    "build": "vite build && npm run copy-sitemap && npm run copy-robots",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "copy-sitemap": "cp ./sitemap.xml ./dist/sitemap.xml"
+    "copy-sitemap": "cp ./sitemap.xml ./dist/sitemap.xml",
+    "copy-robots": "cp ./robots.txt ./dist/robots.txt"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
