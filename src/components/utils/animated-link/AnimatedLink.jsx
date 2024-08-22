@@ -25,7 +25,7 @@ export const AnimatedLink = (props) => {
                 to={link}
                 target={samePage ? '_self' : '_blank'}
                 className={[
-                    "animated-underline transition inline-flex items-center",
+                    "animated-underline transition items-center",
                     noAccentColor && "no-accent-color",
                     customClass
                 ].join(' ')}

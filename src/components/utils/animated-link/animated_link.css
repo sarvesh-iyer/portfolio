@@ -6,7 +6,8 @@
     line-height: 150%;
     text-transform: uppercase;
     color: var(--accent-color);
-    display: inline-block;
+    display: inline-flex;
+    gap: 4px;
 }
 .animated-underline.no-accent-color {
     color: var(--primary-white);

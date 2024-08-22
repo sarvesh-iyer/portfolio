@@ -2,6 +2,7 @@ export const Helper = {
     SERVICE_ID: import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
     TEMPLATE_ID: import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
     PUBLIC_KEY: import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
+    SITE_URL: "https://sarveshiyer.in",
 
     imageContainerStyle: (image) => {
         return {
