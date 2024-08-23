@@ -21,6 +21,7 @@ export const Projects = () => {
                 <meta name="description" content="Explore my portfolio featuring a diverse range of projects, from dynamic web applications and custom UI components to innovative proof of concepts. With expertise in React, Firebase, and front-end development, these projects showcase my ability to create functional, scalable, and user-focused solutions." />
                 <meta name="keywords" content="Frontend development, React development, React projects, Firebase, UI component library, WYSIWYG editor, dynamic web applications, portfolio, web development, custom components, JavaScript, CSS, Storybook, proof of concept, responsive design, API integration" />
                 <link rel="canonical" href={canonicalUrl} />
+                <title>Works | Sarvesh Iyer</title>
             </Helmet>
             <section className="section-wrapper">
                 <div className="section-container featured-project-container">

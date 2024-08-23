@@ -18,6 +18,7 @@ export const About = () => {
                 <meta name="description" content="Experienced front-end developer specializing in React, with nearly 3 years of expertise in building production-ready web applications. Passionate about problem-solving, continuous learning, and mentoring others. Currently expanding skills in React Native, Electron js and Node js. Enjoys playing badminton, traveling, and contributing to Google Maps." />
                 <meta name="keywords" content="Frontend developer, React developer, web development, React Native, Electron js, Node js, problem-solving, mentoring, team player, technology enthusiast, badminton, travel, Google Maps contributor" />
                 <link rel="canonical" href={canonicalUrl} />
+                <title>About | Sarvesh Iyer</title>
             </Helmet>
             <AboutMe pageHeading={true} />
             <ImageCard />

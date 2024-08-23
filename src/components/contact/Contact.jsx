@@ -9,7 +9,7 @@ import emailjs from '@emailjs/browser';
 import { CircularProgress } from '@mui/material'
 import { SuccessModal } from '../utils/modal/SuccessModal'
 import EastRoundedIcon from '@mui/icons-material/EastRounded';
-import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 export const Contact = () => {
 
@@ -108,6 +108,13 @@ export const Contact = () => {
                                 resume
                             </AnimatedLink>
                         </p>
+                        
+                        <div className="address mt-8 -mb-2">
+                            <div className="flex items-center gap-2 -ml-1">
+                                <LocationOnIcon style={{fontSize: '25px', color: 'var(--accent-color)'}} />
+                                Chennai, Tamil Nadu, India
+                            </div>
+                        </div>
 
                         <div className="social-link-wrapper space-x-6 ">
                             {socialLinksList.map(item => (
