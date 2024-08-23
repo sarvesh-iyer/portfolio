@@ -31,6 +31,7 @@ export const Navbar = () => {
                 if(intersecting) {
                     let newArr = Helper.toggleKeysValueInList(navDataList, 3, "isActive", true)
                     setNavMenuList(newArr)
+                    document.title = "Contact | Sarvesh Iyer"
                 }
                 else {
                     changeActiveStateBasedOnPathname()
@@ -51,12 +52,15 @@ export const Navbar = () => {
         if(pathname === "/"){
             let newArr = Helper.toggleKeysValueInList(navDataList, 4, "isActive", navMenuList?.find(each => each?.id === 3)?.isActive ? false : true)
             setNavMenuList(newArr)
+            document.title = "Sarvesh Iyer"
         }else if(pathname.includes("works")){
             let newArr = Helper.toggleKeysValueInList(navDataList, 1, "isActive", navMenuList.find(each => each?.id === 3)?.isActive ? false : true)
             setNavMenuList(newArr)
+            document.title = "Works | Sarvesh Iyer"
         } else if(pathname.includes("about")) {
             let newArr = Helper.toggleKeysValueInList(navDataList, 2, "isActive", navMenuList.find(each => each?.id === 3)?.isActive ? false : true)
             setNavMenuList(newArr)
+            document.title = "About | Sarvesh Iyer"
         }
     }
 
