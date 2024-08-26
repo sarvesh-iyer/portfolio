@@ -100,7 +100,7 @@ export const Contact = () => {
                             </AnimatedLink>
                         </p>
                         <p>For more info, here's my <AnimatedLink 
-                            link=""
+                            link={Helper.RESUME_LINK}
                             customClass="normal-case font-normal"
                             noAccentColor={true}
                             inheritFontSize={true}
@@ -117,7 +117,7 @@ export const Contact = () => {
                         </div>
 
                         <div className="social-link-wrapper space-x-6 ">
-                            {socialLinksList.map(item => (
+                            {socialLinksList?.slice(0, -1)?.map(item => (
                                 <a
                                     key={item.id} 
                                     href={item.link}

@@ -41,7 +41,7 @@ export const Hero = () => {
                             Contact me
                         </ActionButton>
 
-                        {socialLinksList.filter(each => [1,2].includes(each.id)).map(item => (
+                        {socialLinksList.filter(each => [1,2,6].includes(each.id)).map(item => (
                             <a 
                                 key={item.id} 
                                 href={item.link}
