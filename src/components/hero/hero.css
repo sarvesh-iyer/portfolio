@@ -18,6 +18,7 @@
     display: flex; 
     align-items: center;
     margin-top: 40px;
+    gap: 16px;
 }
 .contact-icons {
     width: 54px;
@@ -76,4 +77,15 @@
     .contact-button-group {
         margin-top: 32px;
     }
+}
+
+@media screen and (max-width: 416px) {
+    .contact-button-group {
+        gap: 10px;
+        flex-wrap: wrap;
+    } 
+    .contact-button-group .action-btn {
+        padding: 12px 12px 12px 11px;
+        font-size: 15px;
+    }  
 }

@@ -33,7 +33,7 @@ export const Hero = () => {
                         As a front-end developer with <span className="highlighted-text">2.5+ years</span> of extensive experience in the <span className="highlighted-text">React framework</span>, I specialize in building intuitive, high-performance websites and web apps, while also leading the development and deployment of products from concept to production. 
                     </p>
 
-                    <div className="contact-button-group space-x-4">
+                    <div className="contact-button-group">
                         <ActionButton 
                             icon={<NorthEastIcon />}
                             onClick={handleContactBtn}
