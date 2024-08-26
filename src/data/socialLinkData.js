@@ -3,6 +3,8 @@ import GithubIcon from '../assets/images/icons/github.svg'
 import MailIcon from '../assets/images/icons/mail.svg'
 import WhatsappIcon from '../assets/images/icons/whatsapp.svg'
 import PhoneIcon from '../assets/images/icons/phone.svg'
+import DownloadIcon from '../assets/images/icons/download.svg'
+import { Helper } from '../helpers/Helper'
 
 export const socialLinksList = [
     {
@@ -34,5 +36,11 @@ export const socialLinksList = [
         name: 'phone',
         icon: PhoneIcon,
         link: "tel:+918319372063"
+    },
+    {
+        id: 6,
+        name: 'resume download',
+        icon: DownloadIcon,
+        link: Helper.RESUME_LINK
     },
 ]
