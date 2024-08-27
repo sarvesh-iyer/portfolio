@@ -1,7 +1,8 @@
 import { ActionButton } from '../utils/button/ActionButton'
 import './hero.css'
 // import MyPic from '../../assets/images/hero/mypic.png'
-import MyPic from '../../assets/images/hero/pic1-compress.jpg'
+// import MyPic from '../../assets/images/hero/pic1-compress.jpg'
+import MyPicSvg from '../../assets/images/hero/pic1.svg'
 import MyPicWebp from '../../assets/images/hero/pic1-compress.webp'
 import { socialLinksList } from '../../data/socialLinkData'
 import NorthEastIcon from '@mui/icons-material/NorthEast';
@@ -12,6 +13,7 @@ import pic1_b8srcr_c_scalew_602 from '../../assets/images/hero/responsive-hero/p
 import pic1_b8srcr_c_scalew_924 from '../../assets/images/hero/responsive-hero/pic1_b8srcr_c_scale,w_924.webp' 
 import pic1_b8srcr_c_scalew_1205 from '../../assets/images/hero/responsive-hero/pic1_b8srcr_c_scale,w_1205.webp' 
 import pic1_b8srcr_c_scalew_1380 from '../../assets/images/hero/responsive-hero/pic1_b8srcr_c_scale,w_1380.webp' 
+import { Helper } from '../../helpers/Helper'
 
 export const Hero = () => {
     
@@ -57,6 +59,12 @@ export const Hero = () => {
                 </div>
                 <div className="right-container">
                     <div className="image-container">
+                        <img 
+                            src={MyPicSvg} alt="Sarvesh Iyer" 
+                            width="300" height="200"
+                            className='w-full h-full object-cover' 
+                        />
+
                         {/* <picture>
                             <source srcSet={MyPicWebp} type="image/webp" />
                             <img 
@@ -65,7 +73,7 @@ export const Hero = () => {
                                 className='w-full h-full object-cover' 
                             />
                         </picture> */}
-                        <picture>
+                        {/* <picture>
                             <img
                                 sizes="(min-width: 1380px) 580px, (min-width: 940px) 42.38vw, (min-width: 660px) calc(45.77vw - 30px), 91.76vw"
                                 srcSet={`${pic1_b8srcr_c_scalew_180} 180w,
@@ -77,7 +85,7 @@ export const Hero = () => {
                                 alt="sarvesh iyer"
                                 className='w-full h-full object-cover'
                             />
-                        </picture>
+                        </picture> */}
                     </div>
                 </div>
             </div>

@@ -22,6 +22,18 @@ import ComponentLibWebp from '../assets/images/projects/comp-lib/cover/complib1.
 import NewsPortalWebp from '../assets/images/projects/newsportal/cover/newsportal1.webp'
 import CookieValidatorCheckWebp from '../assets/images/projects/cookie-validator/cover/cookie-validator.webp'
 import PolicyManagerWebp from '../assets/images/projects/policymanager/cover/polymanager1.webp'
+// cover svg imgs
+import AilaysaSvg from '../assets/images/projects/ailaysa/cover/ailaysa1.svg'
+import LangsmartSvg from '../assets/images/projects/langsmart/cover/langsmart1.svg'
+import MonksOfMethodSvg from '../assets/images/projects/monksofmethod/cover/monks1.svg'
+import InteriorHarmonySvg from '../assets/images/projects/interior-harmony/cover/interior-harmony.svg'
+import CityEcommerceSvg from '../assets/images/projects/city-commerce/cover/city1.svg'
+import RTESvg from '../assets/images/projects/rte/cover/custom-rte.svg'
+import ComponentLibSvg from '../assets/images/projects/comp-lib/cover/complib1.svg'
+import NewsPortalSvg from '../assets/images/projects/newsportal/cover/newsportal1.svg'
+import CookieValidatorCheckSvg from '../assets/images/projects/cookie-validator/cover/cookie-validator.svg'
+import PolicyManagerSvg from '../assets/images/projects/policymanager/cover/polymanager1.svg'
+
 
 // img lists
 import { ailaysaImgList } from './projects/ailaysaImgs'
@@ -41,7 +53,7 @@ export const projectsImgData = [
     {
         id: 1,
         coverImg: {
-            actual: Ailaysa,
+            actual: AilaysaSvg,
             webp: AilaysaWebp
         },
         projectImg: ailaysaImgList
@@ -51,7 +63,7 @@ export const projectsImgData = [
     {
         id: 2,
         coverImg: {
-            actual: Langsmart,
+            actual: LangsmartSvg,
             webp: LangsmartWebp
         },
         projectImg: langsmartImgList
@@ -61,7 +73,7 @@ export const projectsImgData = [
     {
         id: 3,
         coverImg: {
-            actual: MonksOfMethod,
+            actual: MonksOfMethodSvg,
             webp: MonksOfMethodWebp
         },
         projectImg: monksImgList
@@ -71,7 +83,7 @@ export const projectsImgData = [
     {
         id: 5,
         coverImg: {
-            actual: PolicyManager,
+            actual: PolicyManagerSvg,
             webp: PolicyManagerWebp
         },
         projectImg: polyManagerImgList
@@ -81,7 +93,7 @@ export const projectsImgData = [
     {
         id: 7,
         coverImg: {
-            actual: ComponentLib,
+            actual: ComponentLibSvg,
             webp: ComponentLibWebp
         },
         projectImg: complibImgList
@@ -91,7 +103,7 @@ export const projectsImgData = [
     {
         id: 6,
         coverImg: {
-            actual: CookieValidatorCheck,
+            actual: CookieValidatorCheckSvg,
             webp: CookieValidatorCheckWebp
         },
         projectImg: cookieValidatorImgList
@@ -102,7 +114,7 @@ export const projectsImgData = [
     {
         id: 8,
         coverImg: {
-            actual: InteriorHarmony,
+            actual: InteriorHarmonySvg,
             webp: InteriorHarmonyWebp
         },
         projectImg: interiorHarmonyImgList
@@ -112,7 +124,7 @@ export const projectsImgData = [
     {
         id: 9,
         coverImg: {
-            actual: RTE,
+            actual: RTESvg,
             webp: RTEWebp
         },
         projectImg: rteImgList
@@ -122,7 +134,7 @@ export const projectsImgData = [
     {
         id: 10,
         coverImg: {
-            actual: NewsPortal,
+            actual: NewsPortalSvg,
             webp: NewsPortalWebp
         },
         projectImg: newsportalImgList
@@ -132,7 +144,7 @@ export const projectsImgData = [
     {
         id: 11,
         coverImg: {
-            actual: CityEcommerce,
+            actual: CityEcommerceSvg,
             webp: CityEcommerceWebp
         },
         projectImg: cityCommerceImgList

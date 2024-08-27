@@ -13,8 +13,6 @@
 
 .project-image-container-card {
     background-color: var(--secondary-dark);
-    display: grid;
-    place-content: center;
     position: relative;
     padding: 20% 8%;
     border-radius: var(--card-border-radius);
