@@ -59,11 +59,11 @@ export const Hero = () => {
                 </div>
                 <div className="right-container">
                     <div className="image-container">
-                        <img 
+                        {/* <img 
                             src={MyPicSvg} alt="Sarvesh Iyer" 
                             width="300" height="200"
                             className='w-full h-full object-cover' 
-                        />
+                        /> */}
 
                         {/* <picture>
                             <source srcSet={MyPicWebp} type="image/webp" />
@@ -73,7 +73,7 @@ export const Hero = () => {
                                 className='w-full h-full object-cover' 
                             />
                         </picture> */}
-                        {/* <picture>
+                        <picture>
                             <img
                                 sizes="(min-width: 1380px) 580px, (min-width: 940px) 42.38vw, (min-width: 660px) calc(45.77vw - 30px), 91.76vw"
                                 srcSet={`${pic1_b8srcr_c_scalew_180} 180w,
@@ -85,7 +85,7 @@ export const Hero = () => {
                                 alt="sarvesh iyer"
                                 className='w-full h-full object-cover'
                             />
-                        </picture> */}
+                        </picture>
                     </div>
                 </div>
             </div>
