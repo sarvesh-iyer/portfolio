@@ -3,7 +3,7 @@ export const Helper = {
     TEMPLATE_ID: import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
     PUBLIC_KEY: import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
     SITE_URL: "https://sarveshiyer.in",
-    RESUME_LINK: "https://drive.google.com/file/d/1tABqQQ0_4daYWLl0YtAkEYo0W3QUR6a3/view?usp=drive_link",
+    RESUME_LINK: "https://drive.google.com/file/d/1OfgKI2TPIIaxLxwHHBoxbOq1zeK8fHRt/view?usp=drive_link",
 
     imageContainerStyle: (image) => {
         return {

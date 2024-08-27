@@ -49,7 +49,7 @@ export const AboutMe = (props) => {
                             More about me
                         </AnimatedLink>
                     ) : (
-                        <div className="contact-button-group space-x-4">
+                        <div className="contact-button-group">
                             <ActionButton 
                                 icon={<FileDownloadOutlinedIcon />}
                                 onClick={() => Helper.openLinkInNewTab(Helper.RESUME_LINK)}
