@@ -29,7 +29,13 @@ export const ProjectCard = (props) => {
                         </div>
                     )}
                     <div className="image-container">
-                        <picture>
+                        <img 
+                            src={data.images.coverImg.actual} alt={data.name} 
+                            width="300" height="200"
+                            loading="lazy" decoding="async"
+                            className="w-full h-full object-cover object-left-top" 
+                        />
+                        {/* <picture>
                             <source srcSet={data.images.coverImg.webp} type="image/webp" />
                             <img 
                                 src={data.images.coverImg.actual} alt={data.name} 
@@ -37,7 +43,7 @@ export const ProjectCard = (props) => {
                                 loading="lazy" decoding="async"
                                 className="w-full h-full object-cover object-left-top" 
                             />
-                        </picture>
+                        </picture> */}
                     </div>
                 </div>
             </div>

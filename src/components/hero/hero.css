@@ -12,6 +12,8 @@
     overflow: hidden;
     max-width: 580px;
     margin: 0 auto;
+    aspect-ratio: 0.88/1;
+    /* width: 100%; */
 }
 
 .contact-button-group {
