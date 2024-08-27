@@ -53,7 +53,7 @@ export const projectsImgData = [
     {
         id: 1,
         coverImg: {
-            actual: AilaysaSvg,
+            actual: Ailaysa,
             webp: AilaysaWebp
         },
         projectImg: ailaysaImgList
@@ -63,7 +63,7 @@ export const projectsImgData = [
     {
         id: 2,
         coverImg: {
-            actual: LangsmartSvg,
+            actual: Langsmart,
             webp: LangsmartWebp
         },
         projectImg: langsmartImgList
@@ -73,7 +73,7 @@ export const projectsImgData = [
     {
         id: 3,
         coverImg: {
-            actual: MonksOfMethodSvg,
+            actual: MonksOfMethod,
             webp: MonksOfMethodWebp
         },
         projectImg: monksImgList
@@ -83,7 +83,7 @@ export const projectsImgData = [
     {
         id: 5,
         coverImg: {
-            actual: PolicyManagerSvg,
+            actual: PolicyManager,
             webp: PolicyManagerWebp
         },
         projectImg: polyManagerImgList
@@ -93,7 +93,7 @@ export const projectsImgData = [
     {
         id: 7,
         coverImg: {
-            actual: ComponentLibSvg,
+            actual: ComponentLib,
             webp: ComponentLibWebp
         },
         projectImg: complibImgList
@@ -103,7 +103,7 @@ export const projectsImgData = [
     {
         id: 6,
         coverImg: {
-            actual: CookieValidatorCheckSvg,
+            actual: CookieValidatorCheck,
             webp: CookieValidatorCheckWebp
         },
         projectImg: cookieValidatorImgList
@@ -114,7 +114,7 @@ export const projectsImgData = [
     {
         id: 8,
         coverImg: {
-            actual: InteriorHarmonySvg,
+            actual: InteriorHarmony,
             webp: InteriorHarmonyWebp
         },
         projectImg: interiorHarmonyImgList
@@ -124,7 +124,7 @@ export const projectsImgData = [
     {
         id: 9,
         coverImg: {
-            actual: RTESvg,
+            actual: RTE,
             webp: RTEWebp
         },
         projectImg: rteImgList
@@ -134,7 +134,7 @@ export const projectsImgData = [
     {
         id: 10,
         coverImg: {
-            actual: NewsPortalSvg,
+            actual: NewsPortal,
             webp: NewsPortalWebp
         },
         projectImg: newsportalImgList
@@ -144,7 +144,7 @@ export const projectsImgData = [
     {
         id: 11,
         coverImg: {
-            actual: CityEcommerceSvg,
+            actual: CityEcommerce,
             webp: CityEcommerceWebp
         },
         projectImg: cityCommerceImgList
