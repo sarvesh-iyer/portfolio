@@ -5,7 +5,7 @@ export const experienceData = [
         organization: "Ailaysa Technologies Pvt. Ltd.",
         location: "Chennai",
         period: "March 2022 - Present",
-        description: "Designing and building responsive React applications that integrate seamlessly with backend APIs. Collaborating closely with backend developers, designers, and product managers to meet project requirements. Writing clean, maintainable code in JavaScript, HTML, and CSS, ensuring high interactivity and user-friendliness. Engaging in the full software development lifecycle from concept through to deployment.",
+        description: "Responsible for developing and maintaining all front-end projects. Collaborated with backend developers, designers, the product manager, and the CEO to achieve project goals. Engaged in the full software development lifecycle from concept through to deployment, including feature development, REST API integration, and enterprise customizations while contributing to POCs for future initiatives. Successfully revamped the product's front-end to Vite, updated packages, and React versions. Developed and deployed an internal UI component library to AWS CodeArtifact with a CI/CD pipeline and documentation.",
         link: "https://ailaysa.com/"
     },
     {

@@ -2,6 +2,7 @@ import { ActionButton } from '../utils/button/ActionButton'
 import './hero.css'
 // import MyPic from '../../assets/images/hero/mypic.png'
 // import MyPic from '../../assets/images/hero/pic1-compress.jpg'
+import MyPic from '../../assets/images/hero/pic1.JPG'
 import MyPicSvg from '../../assets/images/hero/pic1.svg'
 import MyPicWebp from '../../assets/images/hero/pic1-compress.webp'
 import { socialLinksList } from '../../data/socialLinkData'
@@ -9,6 +10,7 @@ import NorthEastIcon from '@mui/icons-material/NorthEast';
 import { useNavigate } from 'react-router-dom'
 
 import pic1_b8srcr_c_scalew_180 from '../../assets/images/hero/responsive-hero/pic1_b8srcr_c_scale,w_180.webp' 
+import pic1_b8srcr_c_scalew_400 from '../../assets/images/hero/responsive-hero/pic1_b8srcr_c_scale,w_400.webp' 
 import pic1_b8srcr_c_scalew_602 from '../../assets/images/hero/responsive-hero/pic1_b8srcr_c_scale,w_602.webp' 
 import pic1_b8srcr_c_scalew_924 from '../../assets/images/hero/responsive-hero/pic1_b8srcr_c_scale,w_924.webp' 
 import pic1_b8srcr_c_scalew_1205 from '../../assets/images/hero/responsive-hero/pic1_b8srcr_c_scale,w_1205.webp' 
@@ -74,7 +76,13 @@ export const Hero = () => {
                             />
                         </picture> */}
                         <picture>
-                            <img
+                            <source media="(min-width:1250px)" type="image/webp" srcSet={pic1_b8srcr_c_scalew_1380} />
+                            <source media="(min-width:1024px)" type="image/webp" srcSet={pic1_b8srcr_c_scalew_1205} />
+                            <source media="(min-width:950px)" type="image/webp" srcSet={pic1_b8srcr_c_scalew_924} />
+                            <source media="(min-width:600px)" type="image/webp" srcSet={pic1_b8srcr_c_scalew_602} />
+                            <source media="(min-width:280px)" type="image/webp" srcSet={pic1_b8srcr_c_scalew_400} />
+                            <img src={MyPic} alt="sarvesh iyer" className='w-full h-full object-cover' />
+                            {/* <img
                                 sizes="(min-width: 1380px) 580px, (min-width: 940px) 42.38vw, (min-width: 660px) calc(45.77vw - 30px), 91.76vw"
                                 srcSet={`${pic1_b8srcr_c_scalew_180} 180w,
                                     ${pic1_b8srcr_c_scalew_602} 602w,
@@ -84,7 +92,7 @@ export const Hero = () => {
                                 src={pic1_b8srcr_c_scalew_1380}
                                 alt="sarvesh iyer"
                                 className='w-full h-full object-cover'
-                            />
+                            /> */}
                         </picture>
                     </div>
                 </div>
