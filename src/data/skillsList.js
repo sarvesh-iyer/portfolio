@@ -23,6 +23,8 @@ import PythonIcon from '../assets/images/skills/python.svg'
 import TypescriptIcon from '../assets/images/skills/typescript.svg'
 import EmailJSIcon from '../assets/images/skills/emailjs.svg'
 import RasberryPiIcon from '../assets/images/skills/raspberry-pi.svg'
+import StrapiIcon from '../assets/images/skills/strapi.svg'
+import ReactQueryIcon from '../assets/images/skills/react-query.svg'
 
 export const skillsList = [
     {
@@ -44,6 +46,12 @@ export const skillsList = [
         link: "https://redux.js.org/"
     },
     {
+        id: 27,
+        name: 'React Query',
+        img: ReactQueryIcon,
+        link: "https://tanstack.com/query/v3"
+    },
+    {
         id: 4,
         name: 'Storybook',
         img: StorybookIcon,
@@ -60,6 +68,12 @@ export const skillsList = [
         name: 'AWS Codeartifact',
         img: CodeartifactIcon,
         link: "https://aws.amazon.com/codeartifact/"
+    },
+    {
+        id: 26,
+        name: 'Strapi',
+        img: StrapiIcon,
+        link: "https://strapi.io/"
     },
     {
         id: 7,
@@ -168,6 +182,12 @@ export const skillsList = [
         name: 'Email JS',
         img: EmailJSIcon,
         link: "https://www.emailjs.com/"
+    },
+    {
+        id: 25,
+        name: 'Rasberry Pi',
+        img: RasberryPiIcon,
+        link: "https://www.raspberrypi.com/"
     },
     {
         id: 25,
