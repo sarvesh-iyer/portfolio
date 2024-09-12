@@ -1,4 +1,3 @@
-import React from 'react'
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 export const ExperienceDataCard = (props) => {
@@ -21,8 +20,10 @@ export const ExperienceDataCard = (props) => {
                     {data.location}
                 </div>
             </a>
-            <p className="work-description" dangerouslySetInnerHTML={{__html: data.description}}>
-            </p>
+            <ul 
+                className="work-description list-disc" 
+                dangerouslySetInnerHTML={{__html: data.description}}>
+            </ul>
         </div>
     )
 }

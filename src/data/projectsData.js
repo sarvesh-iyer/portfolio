@@ -15,7 +15,7 @@ export const projectsData = [
         siteLink: "https://ailaysa.com/",
         githubLink: "",
         tag: "SaaS product",
-        techStack: Helper.filterAndReorderArray(skillsList, [1,2,3,4,5,26,6,10,11,13,14,15,20,21]),
+        techStack: Helper.filterAndReorderArray(skillsList, [1,2,3,27,4,5,26,6,10,11,13,14,15,20,21]),
         images: projectsImgData?.find(each => each.id === 1),
 
     },

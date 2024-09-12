@@ -24,6 +24,7 @@ import TypescriptIcon from '../assets/images/skills/typescript.svg'
 import EmailJSIcon from '../assets/images/skills/emailjs.svg'
 import RasberryPiIcon from '../assets/images/skills/raspberry-pi.svg'
 import StrapiIcon from '../assets/images/skills/strapi.svg'
+import ReactQueryIcon from '../assets/images/skills/react-query.svg'
 
 export const skillsList = [
     {
@@ -43,6 +44,12 @@ export const skillsList = [
         name: 'Redux',
         img: ReduxIcon,
         link: "https://redux.js.org/"
+    },
+    {
+        id: 27,
+        name: 'React Query',
+        img: ReactQueryIcon,
+        link: "https://tanstack.com/query/v3"
     },
     {
         id: 4,
