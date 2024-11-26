@@ -35,9 +35,38 @@
     background-color: var(--secondary-hover-dark);
 }
 
+/* image slider indicators */
+.indicators {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 18px;
+}
+.indicator {
+    width: 40px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.5s;
+} 
+.indicator.active {
+    background-color: var(--accent-color);
+}
+.slide-image {
+    transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 950px) {
+    .indicator {
+        width: 35px;
+    }
+}
 @media screen and (max-width: 865px) {
     .hero-container h1 {
         font-size: 74px;
+    }
+    .indicators {
+        gap: 10px;
     }
 }
 
@@ -50,6 +79,9 @@
     }
     .hero-container .right-container {
         padding: 0;
+    }
+    .indicator {
+        width: 30px;
     }
 }
 
@@ -91,3 +123,4 @@
         font-size: 15px;
     }  
 }
+

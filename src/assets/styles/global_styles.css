@@ -201,6 +201,9 @@ fade {
 	.about-me-container .right-container {
 		width: 60%;
 	}
+    .my-cover-img {
+        height: 550px !important;
+    }
 }
 
 @media screen and (max-width: 950px) { 
@@ -213,6 +216,9 @@ fade {
 
 @media screen and (max-width: 770px) { 
 	h2 { font-size: 56px; }
+    .my-cover-img {
+        height: 450px !important;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -238,4 +244,12 @@ fade {
 	:root {
 		--global-section-padding: 0px 16px;
 	}
+}
+@media screen and (max-width: 400px) {
+    .about-me-container {
+        padding: 70px 0 50px 0;
+    }
+	.my-cover-img {
+        height: 300px !important;
+    }
 }
