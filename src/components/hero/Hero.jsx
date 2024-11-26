@@ -16,6 +16,7 @@ import pic1_b8srcr_c_scalew_924 from '../../assets/images/hero/responsive-hero/p
 import pic1_b8srcr_c_scalew_1205 from '../../assets/images/hero/responsive-hero/pic1_b8srcr_c_scale,w_1205.webp' 
 import pic1_b8srcr_c_scalew_1380 from '../../assets/images/hero/responsive-hero/pic1_b8srcr_c_scale,w_1380.webp' 
 import { Helper } from '../../helpers/Helper'
+import { ImageSlider } from '../utils/hero-img-slider/ImageSlider'
 
 export const Hero = () => {
     
@@ -60,41 +61,41 @@ export const Hero = () => {
                     </div>
                 </div>
                 <div className="right-container">
-                    <div className="image-container">
-                        {/* <img 
-                            src={MyPicSvg} alt="Sarvesh Iyer" 
+                    <ImageSlider />
+                    {/* <picture>
+                        <source media="(min-width:1250px)" type="image/webp" srcSet={pic1_b8srcr_c_scalew_1380} />
+                        <source media="(min-width:1024px)" type="image/webp" srcSet={pic1_b8srcr_c_scalew_1205} />
+                        <source media="(min-width:950px)" type="image/webp" srcSet={pic1_b8srcr_c_scalew_924} />
+                        <source media="(min-width:600px)" type="image/webp" srcSet={pic1_b8srcr_c_scalew_602} />
+                        <source media="(min-width:280px)" type="image/webp" srcSet={pic1_b8srcr_c_scalew_400} />
+                        <img src={MyPic} alt="sarvesh iyer" className='w-full h-full object-cover' />
+                    </picture> */}
+
+                    {/* <img 
+                        src={MyPicSvg} alt="Sarvesh Iyer" 
+                        width="300" height="200"
+                        className='w-full h-full object-cover' 
+                    /> */}
+
+                    {/* <picture>
+                        <source srcSet={MyPicWebp} type="image/webp" />
+                        <img 
+                            src={MyPic} alt="Sarvesh Iyer" 
                             width="300" height="200"
                             className='w-full h-full object-cover' 
-                        /> */}
-
-                        {/* <picture>
-                            <source srcSet={MyPicWebp} type="image/webp" />
-                            <img 
-                                src={MyPic} alt="Sarvesh Iyer" 
-                                width="300" height="200"
-                                className='w-full h-full object-cover' 
-                            />
-                        </picture> */}
-                        <picture>
-                            <source media="(min-width:1250px)" type="image/webp" srcSet={pic1_b8srcr_c_scalew_1380} />
-                            <source media="(min-width:1024px)" type="image/webp" srcSet={pic1_b8srcr_c_scalew_1205} />
-                            <source media="(min-width:950px)" type="image/webp" srcSet={pic1_b8srcr_c_scalew_924} />
-                            <source media="(min-width:600px)" type="image/webp" srcSet={pic1_b8srcr_c_scalew_602} />
-                            <source media="(min-width:280px)" type="image/webp" srcSet={pic1_b8srcr_c_scalew_400} />
-                            <img src={MyPic} alt="sarvesh iyer" className='w-full h-full object-cover' />
-                            {/* <img
-                                sizes="(min-width: 1380px) 580px, (min-width: 940px) 42.38vw, (min-width: 660px) calc(45.77vw - 30px), 91.76vw"
-                                srcSet={`${pic1_b8srcr_c_scalew_180} 180w,
-                                    ${pic1_b8srcr_c_scalew_602} 602w,
-                                    ${pic1_b8srcr_c_scalew_924} 924w,
-                                    ${pic1_b8srcr_c_scalew_1205} 1205w,
-                                    ${pic1_b8srcr_c_scalew_1380} 1380w`}
-                                src={pic1_b8srcr_c_scalew_1380}
-                                alt="sarvesh iyer"
-                                className='w-full h-full object-cover'
-                            /> */}
-                        </picture>
-                    </div>
+                        />
+                    </picture> */}
+                    {/* <img
+                        sizes="(min-width: 1380px) 580px, (min-width: 940px) 42.38vw, (min-width: 660px) calc(45.77vw - 30px), 91.76vw"
+                        srcSet={`${pic1_b8srcr_c_scalew_180} 180w,
+                            ${pic1_b8srcr_c_scalew_602} 602w,
+                            ${pic1_b8srcr_c_scalew_924} 924w,
+                            ${pic1_b8srcr_c_scalew_1205} 1205w,
+                            ${pic1_b8srcr_c_scalew_1380} 1380w`}
+                        src={pic1_b8srcr_c_scalew_1380}
+                        alt="sarvesh iyer"
+                        className='w-full h-full object-cover'
+                    /> */}
                 </div>
             </div>
         </section>
