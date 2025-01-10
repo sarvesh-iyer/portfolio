@@ -8,7 +8,6 @@ import MyPicWebp from '../../assets/images/hero/pic1-compress.webp'
 import { socialLinksList } from '../../data/socialLinkData'
 import NorthEastIcon from '@mui/icons-material/NorthEast';
 import { useNavigate } from 'react-router-dom'
-
 import pic1_b8srcr_c_scalew_180 from '../../assets/images/hero/responsive-hero/pic1_b8srcr_c_scale,w_180.webp' 
 import pic1_b8srcr_c_scalew_400 from '../../assets/images/hero/responsive-hero/pic1_b8srcr_c_scale,w_400.webp' 
 import pic1_b8srcr_c_scalew_602 from '../../assets/images/hero/responsive-hero/pic1_b8srcr_c_scale,w_602.webp' 
@@ -17,6 +16,7 @@ import pic1_b8srcr_c_scalew_1205 from '../../assets/images/hero/responsive-hero/
 import pic1_b8srcr_c_scalew_1380 from '../../assets/images/hero/responsive-hero/pic1_b8srcr_c_scale,w_1380.webp' 
 import { Helper } from '../../helpers/Helper'
 import { ImageSlider } from '../utils/hero-img-slider/ImageSlider'
+import { heroImgDataList } from '../../data/heroImgData'
 
 export const Hero = () => {
     
@@ -61,7 +61,15 @@ export const Hero = () => {
                     </div>
                 </div>
                 <div className="right-container">
-                    <ImageSlider />
+                    <div className="image-container">
+                        <ImageSlider>
+                            {heroImgDataList.map((img, ind) => (
+                                <picture key={ind}>
+                                    <img src={heroImgDataList[ind]} alt="sarvesh iyer" className='w-full h-full object-cover slide-image' />
+                                </picture>
+                            ))}
+                        </ImageSlider>
+                    </div>
                     {/* <picture>
                         <source media="(min-width:1250px)" type="image/webp" srcSet={pic1_b8srcr_c_scalew_1380} />
                         <source media="(min-width:1024px)" type="image/webp" srcSet={pic1_b8srcr_c_scalew_1205} />
