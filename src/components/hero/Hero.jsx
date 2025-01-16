@@ -39,7 +39,7 @@ export const Hero = () => {
                     </p>
 
                     <div className="contact-button-group">
-                        <ActionButton 
+                        <ActionButton
                             icon={<NorthEastIcon />}
                             onClick={handleContactBtn}
                         >

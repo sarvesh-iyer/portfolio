@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './project_card.css'
 import { Divider } from '../divider/Divider'
 import { AnimatedLink } from '../animated-link/AnimatedLink'
@@ -12,11 +12,35 @@ export const ProjectCard = (props) => {
 
     let {data} = props
 
+    useEffect(() => {
+        
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    entry.target.classList.add('show-animation')
+                }else {
+                    // entry.target.classList.remove('show-animation')
+                }
+            })
+        })
+        
+        const hiddenProjContainers = document.querySelectorAll('.project-card-container')
+        hiddenProjContainers.forEach(eachEle => observer.observe(eachEle))
+        
+        return () => {
+            hiddenProjContainers.forEach(eachEle => observer.disconnect(eachEle))
+        }
+    }, [])
+    
+
     const navigate = useNavigate()
 
     const handleImgCardClick = () => {
-        // window.open(data.siteLink)
         navigate(data.pageLink)
+    } 
+
+    const animateProjectContainer = () => {
+
     } 
 
     return (

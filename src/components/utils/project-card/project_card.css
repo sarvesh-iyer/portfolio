@@ -84,6 +84,18 @@
     margin-left: auto;
 }
 
+.project-card-container{
+    opacity: 0;
+    transform: scale(0.3);
+    transition: all 1s ease;
+}
+
+.project-card-container.show-animation{
+    opacity: 1;
+    transform: scale(1);
+}
+
+
 @keyframes infinite-underline {
     from {left: -100%;}
     to {left: 100%; }
