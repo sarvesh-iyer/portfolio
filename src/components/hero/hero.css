@@ -56,6 +56,37 @@
     transition: all 0.5s ease-in-out;
 }
 
+.hero-container .image-container {
+    animation: slideFromRight 0.8s ease;
+}
+.hero-container .left-container {
+    animation: slideFromLeft 0.8s ease;
+}
+
+.hero-container .contact-button-group{
+    animation: slideFromLeft 1.3s ease;
+}
+
+@keyframes slideFromLeft {
+    from {
+        translate: -350px;
+        opacity: 0;
+    }
+    to {
+        translate: 0;
+        opacity: 1;
+    }
+}
+@keyframes slideFromRight {
+    from {
+        opacity: 0;
+        translate: 350px;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 @media screen and (max-width: 950px) {
     .indicator {
         width: 35px;

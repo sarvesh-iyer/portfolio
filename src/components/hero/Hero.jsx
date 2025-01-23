@@ -39,7 +39,7 @@ export const Hero = () => {
                     </p>
 
                     <div className="contact-button-group">
-                        <ActionButton 
+                        <ActionButton
                             icon={<NorthEastIcon />}
                             onClick={handleContactBtn}
                         >
@@ -65,10 +65,22 @@ export const Hero = () => {
                         <ImageSlider>
                             {heroImgDataList.map((img, ind) => (
                                 <picture key={ind}>
-                                    <img src={heroImgDataList[ind]} alt="sarvesh iyer" className='w-full h-full object-cover slide-image' />
+                                    <img 
+                                        src={heroImgDataList[ind]} 
+                                        alt="sarvesh iyer" 
+                                        className='w-full h-full object-cover slide-image' 
+                                    />
                                 </picture>
                             ))}
                         </ImageSlider>
+                        {heroImgDataList.map((img, ind) => (
+                            <img
+                                key={ind} 
+                                src={heroImgDataList[ind]} 
+                                alt="sarvesh iyer" 
+                                className='w-full h-full object-cover slide-image' 
+                            />
+                        ))}
                     </div>
                     {/* <picture>
                         <source media="(min-width:1250px)" type="image/webp" srcSet={pic1_b8srcr_c_scalew_1380} />

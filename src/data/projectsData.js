@@ -20,38 +20,6 @@ export const projectsData = [
 
     },
     {
-        id: 2,
-        pageLink: "/works/2",
-        name: "Langsmart",
-        description: "Langsmart provides a wide range of partnership opportunities for both sell-side and buy-side entities. It provides a broad spectrum of content and language services tailored to meet cutomer's diverse needs.",
-        attributes: {
-            "Role": "Front-end(React) developer",
-            "Technologies": "",
-        },
-        siteLink: "https://langsmart.com/",
-        githubLink: "",
-        tag: "Service website",
-        techStack: Helper.filterAndReorderArray(skillsList, [1,3,5,10,12,13,21]),
-        images: projectsImgData?.find(each => each.id === 2),
-        
-    },
-    {
-        id: 3,
-        pageLink: "/works/3",
-        name: "Monks of Methods",
-        description: "Monks of Methods is an e-commerce platform that provides fully customized and tailored wardrobes for men, delivered right to their doorstep, while maintaining transparency in their methods.",
-        attributes: {
-            "Role": "Front-end(Shopify theme) developer",
-            "Technologies": "",
-        },
-        siteLink: "https://monksofmethod.com/",
-        githubLink: "",
-        tag: "E-commerce",
-        techStack: Helper.filterAndReorderArray(skillsList, [17,7,8,9,10,12,13,21]), 
-        images: projectsImgData?.find(each => each.id === 3),
-
-    },
-    {
         id: 5,
         pageLink: "/works/5",
         name: "Policy Manager",
@@ -110,6 +78,38 @@ export const projectsData = [
             },
         ]
 
+    },
+    {
+        id: 3,
+        pageLink: "/works/3",
+        name: "Monks of Methods",
+        description: "Monks of Methods is an e-commerce platform that provides fully customized and tailored wardrobes for men, delivered right to their doorstep, while maintaining transparency in their methods.",
+        attributes: {
+            "Role": "Front-end(Shopify theme) developer",
+            "Technologies": "",
+        },
+        siteLink: "https://monksofmethod.com/",
+        githubLink: "",
+        tag: "E-commerce",
+        techStack: Helper.filterAndReorderArray(skillsList, [17,7,8,9,10,12,13,21]), 
+        images: projectsImgData?.find(each => each.id === 3),
+
+    },
+    {
+        id: 2,
+        pageLink: "/works/2",
+        name: "Langsmart",
+        description: "Langsmart provides a wide range of partnership opportunities for both sell-side and buy-side entities. It provides a broad spectrum of content and language services tailored to meet cutomer's diverse needs.",
+        attributes: {
+            "Role": "Front-end(React) developer",
+            "Technologies": "",
+        },
+        siteLink: "https://langsmart.com/",
+        githubLink: "",
+        tag: "Service website",
+        techStack: Helper.filterAndReorderArray(skillsList, [1,3,5,10,12,13,21]),
+        images: projectsImgData?.find(each => each.id === 2),
+        
     },
     {
         id: 7,
